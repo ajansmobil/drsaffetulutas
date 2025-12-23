@@ -1,0 +1,943 @@
+
+  /* Ana Container */
+  .zg0np {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #116f65;
+    padding: 10px 0;
+  }
+
+  /* Header - Logo ve Dil Seçici */
+  .zg0npheader {
+    display: flex;
+    width: var(--max);
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .zg0npbody {
+    display: flex;
+    align-items: center;
+  }
+
+  .zg0npbodylogo {
+    height: 100px;
+    max-width: 90vw;
+    object-fit: contain;
+  }
+
+  /* Sağ Taraf - Dil Seçici ve Hamburger */
+  .zg0npright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Dil Seçici - Desktop */
+  .zg0nplanguages {
+    display: flex;
+    align-items: center;
+  }
+
+  .zg0nplanguages ul {
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .zg0nplanguages li {
+    list-style: none;
+  }
+
+  .zg0nplanguages li a {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #279c90;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .zg0nplanguages li a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .zg0nplanguages:empty,
+  .zg0nplanguages ul:empty {
+    display: none;
+  }
+
+  /* Hamburger Menü Butonu */
+  .zg0npmenumobil {
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: #279c90;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .zg0npmenumobil:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+
+  .zg0npmenumobil .material-symbols-outlined {
+    font-size: 28px;
+  }
+
+  /* Menü Listesi */
+  .zg0npmenulist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #279c90;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    width: var(--max);
+    margin: 15px auto 0;
+    overflow: hidden;
+  }
+
+  .zg0npmenulist ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2px;
+    margin: 0;
+    padding: 4px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .zg0npmenulist ul a {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 100%;
+  }
+
+  .zg0npmenulist ul a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: width 0.3s ease;
+  }
+
+  .zg0npmenulist ul a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .zg0npmenulist ul a:hover::before {
+    width: calc(100% - 20px);
+  }
+
+  .zg0npmenuactive {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    font-weight: 600;
+  }
+
+  .zg0npmenuactive::before {
+    width: calc(100% - 20px) !important;
+  }
+
+  /* Dil Seçici - Mobil */
+  .zg0nplanguages-mobile {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .zg0nplanguages-mobile ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zg0nplanguages-mobile li {
+    list-style: none;
+    display: flex;
+  }
+
+  .zg0nplanguages-mobile li a {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .zg0nplanguages-mobile li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+  }
+
+  .zg0nplanguages-mobile:empty,
+  .zg0nplanguages-mobile ul:empty {
+    display: none !important;
+  }
+
+  /* Desktop Görünüm */
+  @media screen and (min-width: 1025px) {
+    .zg0npmenumobil {
+      display: none !important;
+    }
+
+    .zg0npmenulist {
+      display: flex !important;
+      margin-top: 20px;
+    }
+
+    .zg0npmenulist ul {
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .zg0npmenulist ul a {
+      padding: 14px 28px;
+      font-size: 16px;
+    }
+  }
+
+  /* Tablet ve Mobil */
+  @media screen and (max-width: 1024px) {
+    .zg0npheader {
+      width: calc(100% - 20px);
+    }
+
+    .zg0npmenumobil {
+      display: flex;
+    }
+
+    .zg0nplanguages {
+      display: none;
+    }
+
+    .zg0npmenulist {
+      width: calc(100% - 20px);
+      margin: 15px auto 0;
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+      flex-direction: column;
+      display: none;
+    }
+
+    .zg0npmenulist:not(.is-collapsed) {
+      display: flex;
+    }
+
+    .zg0npmenulist ul {
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      padding: 12px 0;
+    }
+
+    .zg0npmenulist ul a {
+      width: 100%;
+      padding: 14px 20px;
+      border-radius: 0;
+      text-align: left;
+      justify-content: flex-start;
+    }
+
+    .zg0npmenulist ul a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: none;
+    }
+
+    .zg0npmenulist:not(.is-collapsed) .zg0nplanguages-mobile {
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px 15px;
+    }
+
+    .zg0npmenulist:not(.is-collapsed) .zg0nplanguages-mobile ul {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  /* Küçük Mobil */
+  @media screen and (max-width: 768px) {
+    .zg0np {
+      padding: 8px 0;
+    }
+
+    .zg0npheader {
+      padding: 0 15px;
+    }
+
+    .zg0npbodylogo {
+      max-width: 60vw;
+    }
+
+    .zg0npmenulist ul a {
+      font-size: 14px;
+      padding: 12px 20px;
+    }
+
+    .zg0npmenumobil {
+      padding: 6px 10px;
+    }
+
+    .zg0npmenumobil .material-symbols-outlined {
+      font-size: 24px;
+    }
+  }
+
+
+  .dwfku {
+    width: var(--max);
+    margin: --margin--;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* Banka Hesap Bilgileri Tablosu */
+  .bank-accounts-table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background: #fff;
+  }
+
+  .bank-accounts-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    min-width: 600px;
+  }
+
+  .bank-accounts-table thead th {
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    border: 1px solid #e0e0e0;
+    background: linear-gradient(135deg, #116f65 0%, #0d5a52 100%);
+    color: #fff;
+    position: relative;
+  }
+
+  .bank-accounts-table thead th:first-child {
+    border-top-left-radius: 12px;
+  }
+
+  .bank-accounts-table thead th:last-child {
+    border-top-right-radius: 12px;
+  }
+
+  .person-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.2em;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .bank-accounts-table tbody td {
+    padding: 20px 15px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+    transition: background 0.3s ease;
+  }
+
+  .bank-accounts-table tbody tr:hover td {
+    background: #f8f9fa;
+  }
+
+  .role-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #e3f2fd;
+    color: #116f65;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+  }
+
+  .account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .account-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .currency-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.5em;
+    color: #116f65;
+  }
+
+  .account-label {
+    font-weight: 600;
+    font-size: 1.05em;
+    color: #333;
+  }
+
+  .account-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .account-number,
+  .account-iban-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .detail-label {
+    font-size: 0.85em;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .detail-value {
+    font-size: 0.95em;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .iban-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+  }
+
+  .account-iban {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #333;
+    word-break: break-all;
+    flex: 1;
+    letter-spacing: 1px;
+  }
+
+  .copy-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    color: #116f65;
+    min-width: 32px;
+    height: 32px;
+  }
+
+  .copy-btn:hover {
+    background: #e0f2f1;
+    transform: scale(1.1);
+  }
+
+  .copy-btn:active {
+    transform: scale(0.95);
+  }
+
+  .copy-btn .material-symbols-outlined {
+    font-size: 18px;
+  }
+
+  .copy-btn.copied {
+    color: #4caf50;
+  }
+
+  .copy-btn.copied .material-symbols-outlined::before {
+    content: 'check';
+  }
+
+  /* Yorum Formu */
+  .comment-form-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+    animation: fadeInUp 0.6s ease;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .form-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  .comment-form-title {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #116f65;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .title-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.2em;
+  }
+
+  .comment-form-note {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-group label {
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .label-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.1em;
+    color: #116f65;
+  }
+
+  .form-group textarea,
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="url"] {
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background: #fff;
+  }
+
+  .form-group textarea:focus,
+  .form-group input:focus {
+    outline: none;
+    border-color: #116f65;
+    box-shadow: 0 0 0 3px rgba(17, 111, 101, 0.1);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+    line-height: 1.6;
+  }
+
+  .char-count {
+    font-size: 0.85em;
+    color: #999;
+    text-align: right;
+    margin-top: -5px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .checkbox-group {
+    margin-top: 10px;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: normal;
+    position: relative;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+  }
+
+  .checkbox-label:hover {
+    background: #f5f5f5;
+  }
+
+  .checkbox-label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+  }
+
+  .checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .checkbox-label input[type="checkbox"]:checked + .checkbox-custom {
+    background: #116f65;
+    border-color: #116f65;
+  }
+
+  .checkbox-label input[type="checkbox"]:checked + .checkbox-custom::after {
+    content: '✓';
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .checkbox-text {
+    flex: 1;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .submit-button {
+    background: linear-gradient(135deg, #116f65 0%, #0d5a52 100%);
+    color: #fff;
+    border: none;
+    padding: 14px 40px;
+    font-size: 1.05em;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(17, 111, 101, 0.3);
+  }
+
+  .submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(17, 111, 101, 0.4);
+    background: linear-gradient(135deg, #0d5a52 0%, #116f65 100%);
+  }
+
+  .submit-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(17, 111, 101, 0.3);
+  }
+
+  .button-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.2em;
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 1024px) {
+    .dwfku {
+      gap: 40px;
+    }
+
+    .comment-form-section {
+      padding: 30px;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .bank-accounts-table table {
+      font-size: 0.9em;
+      min-width: 500px;
+    }
+
+    .bank-accounts-table thead th {
+      padding: 15px 10px;
+      font-size: 1em;
+    }
+
+    .bank-accounts-table tbody td {
+      padding: 15px 10px;
+    }
+
+    .comment-form-section {
+      padding: 24px;
+    }
+
+    .comment-form-title {
+      font-size: 1.5em;
+    }
+
+    .form-group textarea,
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="url"] {
+      padding: 12px;
+    }
+
+    .submit-button {
+      padding: 12px 30px;
+      font-size: 1em;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .dwfku {
+      gap: 30px;
+    }
+
+    .comment-form-section {
+      padding: 20px;
+    }
+
+    .account-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .iban-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+
+  .moduleimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .moduleimg > img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .footer {
+    position: relative;
+    background: #116f65;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  } 
+
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff !important;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+
+  .menu__link:hover {
+    opacity: 1;
+  }
+
+  .footer p { 
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='katman_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 640 65' style='enable-background:new 0 0 640 65;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23116f65;%7D %3C/style%3E %3Cpath class='st0' d='M0,22.4C0,22.4,74.1,0,153,0c176.5,0,328.1,76.6,487,22.4V65H0V22.4z'/%3E%3C/svg%3E");
+    background-size: 1000px 102px;
+  }
+
+  .wave#wave1 {
+    z-index: 100;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+
+  .wave#wave2 {
+    z-index: 99;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+
+  .wave#wave3 {
+    z-index: 100;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+
+  .wave#wave4 {
+    z-index: 99;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+

@@ -1,0 +1,777 @@
+<div class="modulex">
+  <!-- Banka Hesap Bilgileri Tablosu -->
+  <div class="bank-accounts-table">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <span class="person-icon">person</span>
+              <span>Op. Dr. Saffet Ulutaş</span>
+            </th>
+            <th>
+              <span class="person-icon">person</span>
+              <span>Nursel Cansel Avcı</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="role-badge">Sağlık Turizmi Yetkilisi – Estetik Cerrahi</div>
+            </td>
+            <td>
+              <div class="role-badge">Sağlık Turizmi Yardımcısı - Hemşire</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="account-info">
+                <div class="account-header">
+                  <span class="currency-icon">attach_money</span>
+                  <div class="account-label">Dolar Döviz Hesabımız</div>
+                </div>
+                <div class="account-details">
+                  <div class="account-number">
+                    <span class="detail-label">Hesap No:</span>
+                    <span class="detail-value">0057-0373986 / Gaziantep</span>
+                  </div>
+                  <div class="account-iban-wrapper">
+                    <span class="detail-label">IBAN:</span>
+                    <div class="iban-container">
+                      <span class="account-iban" id="iban1">TR94 0004 6000 5700 1000 3739 86</span>
+                      <button class="copy-btn" onclick="copyToClipboard('iban1', this)" data-copy="TR94 0004 6000 5700 1000 3739 86" title="IBAN'ı Kopyala">
+                        <span class="material-symbols-outlined">content_copy</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="account-info">
+                <div class="account-header">
+                  <span class="currency-icon">euro</span>
+                  <div class="account-label">Euro Döviz Hesabımız</div>
+                </div>
+                <div class="account-details">
+                  <div class="account-number">
+                    <span class="detail-label">Hesap No:</span>
+                    <span class="detail-value">0057-0397976 / Gaziantep</span>
+                  </div>
+                  <div class="account-iban-wrapper">
+                    <span class="detail-label">IBAN:</span>
+                    <div class="iban-container">
+                      <span class="account-iban" id="iban2">TR10 0004 6000 5703 6000 3979 76</span>
+                      <button class="copy-btn" onclick="copyToClipboard('iban2', this)" data-copy="TR10 0004 6000 5703 6000 3979 76" title="IBAN'ı Kopyala">
+                        <span class="material-symbols-outlined">content_copy</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Yorum Formu -->
+  <div class="comment-form-section">
+    <div class="form-header">
+      <h3 class="comment-form-title">
+        <span class="title-icon">comment</span>
+        Bir yanıt yazın
+      </h3>
+      <p class="comment-form-note">E-posta adresiniz yayınlanmayacak. Gerekli alanlar * ile işaretlenmişlerdir</p>
+    </div>
+    
+    <form class="comment-form" id="commentForm">
+      <div class="form-group">
+        <label for="comment">
+          <span class="label-icon">edit</span>
+          Yorum *
+        </label>
+        <textarea id="comment" name="comment" rows="6" required placeholder="Yorumunuzu buraya yazın..."></textarea>
+        <span class="char-count"><span id="commentCount">0</span> / 1000 karakter</span>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">
+            <span class="label-icon">person</span>
+            Ad *
+          </label>
+          <input type="text" id="name" name="name" required placeholder="Adınız">
+        </div>
+        <div class="form-group">
+          <label for="email">
+            <span class="label-icon">email</span>
+            E-posta *
+          </label>
+          <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+        </div>
+        <div class="form-group">
+          <label for="website">
+            <span class="label-icon">language</span>
+            İnternet sitesi
+          </label>
+          <input type="url" id="website" name="website" placeholder="https://">
+        </div>
+      </div>
+      
+      <div class="form-group checkbox-group">
+        <label class="checkbox-label">
+          <input type="checkbox" id="saveInfo" name="saveInfo">
+          <span class="checkbox-custom"></span>
+          <span class="checkbox-text">Daha sonraki yorumlarımda kullanılması için adım, e-posta adresim ve site adresim bu tarayıcıya kaydedilsin.</span>
+        </label>
+      </div>
+      
+      <div class="form-actions">
+        <button type="submit" class="submit-button">
+          <span class="button-icon">send</span>
+          <span>Yorum gönder</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<style>
+  .modulex {
+    width: var(--max);
+    margin: --margin--;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* Banka Hesap Bilgileri Tablosu */
+  .bank-accounts-table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background: #fff;
+  }
+
+  .bank-accounts-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    min-width: 600px;
+  }
+
+  .bank-accounts-table thead th {
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    border: 1px solid #e0e0e0;
+    background: linear-gradient(135deg, #116f65 0%, #0d5a52 100%);
+    color: #fff;
+    position: relative;
+  }
+
+  .bank-accounts-table thead th:first-child {
+    border-top-left-radius: 12px;
+  }
+
+  .bank-accounts-table thead th:last-child {
+    border-top-right-radius: 12px;
+  }
+
+  .person-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.2em;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .bank-accounts-table tbody td {
+    padding: 20px 15px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+    transition: background 0.3s ease;
+  }
+
+  .bank-accounts-table tbody tr:hover td {
+    background: #f8f9fa;
+  }
+
+  .role-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #e3f2fd;
+    color: #116f65;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+  }
+
+  .account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .account-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .currency-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.5em;
+    color: #116f65;
+  }
+
+  .account-label {
+    font-weight: 600;
+    font-size: 1.05em;
+    color: #333;
+  }
+
+  .account-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .account-number,
+  .account-iban-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .detail-label {
+    font-size: 0.85em;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .detail-value {
+    font-size: 0.95em;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .iban-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+  }
+
+  .account-iban {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #333;
+    word-break: break-all;
+    flex: 1;
+    letter-spacing: 1px;
+  }
+
+  .copy-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    color: #116f65;
+    min-width: 32px;
+    height: 32px;
+  }
+
+  .copy-btn:hover {
+    background: #e0f2f1;
+    transform: scale(1.1);
+  }
+
+  .copy-btn:active {
+    transform: scale(0.95);
+  }
+
+  .copy-btn .material-symbols-outlined {
+    font-size: 18px;
+  }
+
+  .copy-btn.copied {
+    color: #4caf50;
+  }
+
+  .copy-btn.copied .material-symbols-outlined::before {
+    content: 'check';
+  }
+
+  /* Yorum Formu */
+  .comment-form-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+    animation: fadeInUp 0.6s ease;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .form-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  .comment-form-title {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #116f65;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .title-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.2em;
+  }
+
+  .comment-form-note {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-group label {
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .label-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.1em;
+    color: #116f65;
+  }
+
+  .form-group textarea,
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="url"] {
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background: #fff;
+  }
+
+  .form-group textarea:focus,
+  .form-group input:focus {
+    outline: none;
+    border-color: #116f65;
+    box-shadow: 0 0 0 3px rgba(17, 111, 101, 0.1);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+    line-height: 1.6;
+  }
+
+  .char-count {
+    font-size: 0.85em;
+    color: #999;
+    text-align: right;
+    margin-top: -5px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .checkbox-group {
+    margin-top: 10px;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: normal;
+    position: relative;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+  }
+
+  .checkbox-label:hover {
+    background: #f5f5f5;
+  }
+
+  .checkbox-label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+  }
+
+  .checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .checkbox-label input[type="checkbox"]:checked + .checkbox-custom {
+    background: #116f65;
+    border-color: #116f65;
+  }
+
+  .checkbox-label input[type="checkbox"]:checked + .checkbox-custom::after {
+    content: '✓';
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .checkbox-text {
+    flex: 1;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .submit-button {
+    background: linear-gradient(135deg, #116f65 0%, #0d5a52 100%);
+    color: #fff;
+    border: none;
+    padding: 14px 40px;
+    font-size: 1.05em;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(17, 111, 101, 0.3);
+  }
+
+  .submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(17, 111, 101, 0.4);
+    background: linear-gradient(135deg, #0d5a52 0%, #116f65 100%);
+  }
+
+  .submit-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(17, 111, 101, 0.3);
+  }
+
+  .button-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.2em;
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 1024px) {
+    .modulex {
+      gap: 40px;
+    }
+
+    .comment-form-section {
+      padding: 30px;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .bank-accounts-table table {
+      font-size: 0.9em;
+      min-width: 500px;
+    }
+
+    .bank-accounts-table thead th {
+      padding: 15px 10px;
+      font-size: 1em;
+    }
+
+    .bank-accounts-table tbody td {
+      padding: 15px 10px;
+    }
+
+    .comment-form-section {
+      padding: 24px;
+    }
+
+    .comment-form-title {
+      font-size: 1.5em;
+    }
+
+    .form-group textarea,
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="url"] {
+      padding: 12px;
+    }
+
+    .submit-button {
+      padding: 12px 30px;
+      font-size: 1em;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .modulex {
+      gap: 30px;
+    }
+
+    .comment-form-section {
+      padding: 20px;
+    }
+
+    .account-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .iban-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+<script>
+  // IBAN Kopyalama Fonksiyonu
+  function copyToClipboard(elementId, button) {
+    var ibanElement = document.getElementById(elementId);
+    var text = ibanElement ? ibanElement.textContent.trim() : button.getAttribute('data-copy');
+    
+    if (!text) return;
+    
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function() {
+        showCopyFeedback(button);
+      }).catch(function(err) {
+        console.error('Kopyalama hatası:', err);
+        fallbackCopy(text, button);
+      });
+    } else {
+      fallbackCopy(text, button);
+    }
+  }
+
+  function fallbackCopy(text, button) {
+    var textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    textArea.style.top = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+      document.execCommand('copy');
+      showCopyFeedback(button);
+    } catch (err) {
+      console.error('Kopyalama hatası:', err);
+      alert('Kopyalama başarısız oldu. Lütfen manuel olarak kopyalayın: ' + text);
+    }
+    
+    document.body.removeChild(textArea);
+  }
+
+  function showCopyFeedback(button) {
+    button.classList.add('copied');
+    var icon = button.querySelector('.material-symbols-outlined');
+    var originalText = icon ? icon.textContent : '';
+    
+    if (icon) {
+      icon.textContent = 'check';
+    }
+    
+    setTimeout(function() {
+      button.classList.remove('copied');
+      if (icon) {
+        icon.textContent = originalText;
+      }
+    }, 2000);
+  }
+
+  // Form İşlemleri
+  if (typeof document !== 'undefined') {
+    setTimeout(function() {
+      // Karakter Sayacı
+      var commentTextarea = document.getElementById('comment');
+      var commentCount = document.getElementById('commentCount');
+      
+      if (commentTextarea && commentCount) {
+        commentTextarea.addEventListener('input', function() {
+          var length = this.value.length;
+          commentCount.textContent = length;
+          
+          if (length > 1000) {
+            this.value = this.value.substring(0, 1000);
+            commentCount.textContent = 1000;
+          }
+          
+          // Renk değişimi
+          var charCountElement = commentCount.parentElement;
+          if (length > 900) {
+            charCountElement.style.color = '#f44336';
+          } else if (length > 700) {
+            charCountElement.style.color = '#ff9800';
+          } else {
+            charCountElement.style.color = '#999';
+          }
+        });
+      }
+
+      // Form Gönderimi
+      var form = document.getElementById('commentForm');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Validasyon
+          var name = document.getElementById('name').value.trim();
+          var email = document.getElementById('email').value.trim();
+          var comment = document.getElementById('comment').value.trim();
+          
+          if (!name || !email || !comment) {
+            alert('Lütfen tüm zorunlu alanları doldurun.');
+            return;
+          }
+          
+          // Email validasyonu
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            alert('Lütfen geçerli bir e-posta adresi girin.');
+            return;
+          }
+          
+          // Form verilerini hazırla
+          var formData = {
+            name: name,
+            email: email,
+            website: document.getElementById('website').value.trim(),
+            comment: comment,
+            saveInfo: document.getElementById('saveInfo').checked,
+            timestamp: new Date().toISOString()
+          };
+          
+          // Burada API'ye gönderilebilir
+          console.log('Form verileri:', formData);
+          
+          // Başarı mesajı
+          var submitButton = form.querySelector('.submit-button');
+          var originalText = submitButton.innerHTML;
+          submitButton.innerHTML = '<span class="material-symbols-outlined">check</span><span>Gönderildi!</span>';
+          submitButton.style.background = '#4caf50';
+          submitButton.disabled = true;
+          
+          // Formu temizle
+          setTimeout(function() {
+            form.reset();
+            if (commentCount) commentCount.textContent = '0';
+            submitButton.innerHTML = originalText;
+            submitButton.style.background = '';
+            submitButton.disabled = false;
+          }, 3000);
+        });
+      }
+
+      // Input focus animasyonları
+      var inputs = document.querySelectorAll('.form-group input, .form-group textarea');
+      inputs.forEach(function(input) {
+        input.addEventListener('focus', function() {
+          this.parentElement.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', function() {
+          this.parentElement.classList.remove('focused');
+          if (this.value) {
+            this.parentElement.classList.add('filled');
+          } else {
+            this.parentElement.classList.remove('filled');
+          }
+        });
+      });
+    }, 100);
+  }
+</script>
+
