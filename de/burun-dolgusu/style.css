@@ -1,6 +1,6 @@
 
   /* Ana Container */
-  .apt6x {
+  .wmrmk {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
   }
 
   /* Header - Logo ve Dil Seçici */
-  .apt6xheader {
+  .wmrmkheader {
     display: flex;
     width: var(--max);
     align-items: center;
@@ -19,19 +19,19 @@
     padding: 0 10px;
   }
 
-  .apt6xbody {
+  .wmrmkbody {
     display: flex;
     align-items: center;
   }
 
-  .apt6xbodylogo {
+  .wmrmkbodylogo {
     height: 100px;
     max-width: 90vw;
     object-fit: contain;
   }
 
   /* Sağ Taraf - Dil Seçici ve Hamburger */
-  .apt6xright {
+  .wmrmkright {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,12 +39,12 @@
   }
 
   /* Dil Seçici - Desktop */
-  .apt6xlanguages {
+  .wmrmklanguages {
     display: flex;
     align-items: center;
   }
 
-  .apt6xlanguages ul {
+  .wmrmklanguages ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -52,11 +52,11 @@
     list-style: none;
   }
 
-  .apt6xlanguages li {
+  .wmrmklanguages li {
     list-style: none;
   }
 
-  .apt6xlanguages li a {
+  .wmrmklanguages li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #279c90;
@@ -70,20 +70,20 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .apt6xlanguages li a:hover {
+  .wmrmklanguages li a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     color: #000;
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .apt6xlanguages:empty,
-  .apt6xlanguages ul:empty {
+  .wmrmklanguages:empty,
+  .wmrmklanguages ul:empty {
     display: none;
   }
 
   /* Hamburger Menü Butonu */
-  .apt6xmenumobil {
+  .wmrmkmenumobil {
     display: none;
     cursor: pointer;
     align-items: center;
@@ -96,17 +96,17 @@
     transition: all 0.3s ease;
   }
 
-  .apt6xmenumobil:hover {
+  .wmrmkmenumobil:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
   }
 
-  .apt6xmenumobil .material-symbols-outlined {
+  .wmrmkmenumobil .material-symbols-outlined {
     font-size: 28px;
   }
 
   /* Menü Listesi */
-  .apt6xmenulist {
+  .wmrmkmenulist {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +119,7 @@
     overflow: hidden;
   }
 
-  .apt6xmenulist ul {
+  .wmrmkmenulist ul {
     list-style-type: none;
     display: flex;
     gap: 2px;
@@ -129,7 +129,7 @@
     width: 100%;
   }
 
-  .apt6xmenulist ul a {
+  .wmrmkmenulist ul a {
     padding: 12px 24px;
     font-size: 15px;
     font-weight: 500;
@@ -146,7 +146,7 @@
     width: 100%;
   }
 
-  .apt6xmenulist ul a::before {
+  .wmrmkmenulist ul a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -158,33 +158,33 @@
     transition: width 0.3s ease;
   }
 
-  .apt6xmenulist ul a:hover {
+  .wmrmkmenulist ul a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-1px);
   }
 
-  .apt6xmenulist ul a:hover::before {
+  .wmrmkmenulist ul a:hover::before {
     width: calc(100% - 20px);
   }
 
-  .apt6xmenuactive {
+  .wmrmkmenuactive {
     background-color: rgba(255, 255, 255, 0.2) !important;
     font-weight: 600;
   }
 
-  .apt6xmenuactive::before {
+  .wmrmkmenuactive::before {
     width: calc(100% - 20px) !important;
   }
 
   /* Dil Seçici - Mobil */
-  .apt6xlanguages-mobile {
+  .wmrmklanguages-mobile {
     display: none;
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .apt6xlanguages-mobile ul {
+  .wmrmklanguages-mobile ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -196,12 +196,12 @@
     align-items: center;
   }
 
-  .apt6xlanguages-mobile li {
+  .wmrmklanguages-mobile li {
     list-style: none;
     display: flex;
   }
 
-  .apt6xlanguages-mobile li a {
+  .wmrmklanguages-mobile li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #fff;
@@ -215,33 +215,33 @@
     white-space: nowrap;
   }
 
-  .apt6xlanguages-mobile li a:hover {
+  .wmrmklanguages-mobile li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-1px);
   }
 
-  .apt6xlanguages-mobile:empty,
-  .apt6xlanguages-mobile ul:empty {
+  .wmrmklanguages-mobile:empty,
+  .wmrmklanguages-mobile ul:empty {
     display: none !important;
   }
 
   /* Desktop Görünüm */
   @media screen and (min-width: 1025px) {
-    .apt6xmenumobil {
+    .wmrmkmenumobil {
       display: none !important;
     }
 
-    .apt6xmenulist {
+    .wmrmkmenulist {
       display: flex !important;
       margin-top: 20px;
     }
 
-    .apt6xmenulist ul {
+    .wmrmkmenulist ul {
       justify-content: center;
       gap: 4px;
     }
 
-    .apt6xmenulist ul a {
+    .wmrmkmenulist ul a {
       padding: 14px 28px;
       font-size: 16px;
     }
@@ -249,19 +249,19 @@
 
   /* Tablet ve Mobil */
   @media screen and (max-width: 1024px) {
-    .apt6xheader {
+    .wmrmkheader {
       width: calc(100% - 20px);
     }
 
-    .apt6xmenumobil {
+    .wmrmkmenumobil {
       display: flex;
     }
 
-    .apt6xlanguages {
+    .wmrmklanguages {
       display: none;
     }
 
-    .apt6xmenulist {
+    .wmrmkmenulist {
       width: calc(100% - 20px);
       margin: 15px auto 0;
       padding: 0;
@@ -271,18 +271,18 @@
       display: none;
     }
 
-    .apt6xmenulist:not(.is-collapsed) {
+    .wmrmkmenulist:not(.is-collapsed) {
       display: flex;
     }
 
-    .apt6xmenulist ul {
+    .wmrmkmenulist ul {
       flex-direction: column;
       gap: 0;
       width: 100%;
       padding: 12px 0;
     }
 
-    .apt6xmenulist ul a {
+    .wmrmkmenulist ul a {
       width: 100%;
       padding: 14px 20px;
       border-radius: 0;
@@ -290,18 +290,18 @@
       justify-content: flex-start;
     }
 
-    .apt6xmenulist ul a:hover {
+    .wmrmkmenulist ul a:hover {
       background-color: rgba(255, 255, 255, 0.1);
       transform: none;
     }
 
-    .apt6xmenulist:not(.is-collapsed) .apt6xlanguages-mobile {
+    .wmrmkmenulist:not(.is-collapsed) .wmrmklanguages-mobile {
       display: flex;
       flex-direction: column;
       padding: 0 20px 15px;
     }
 
-    .apt6xmenulist:not(.is-collapsed) .apt6xlanguages-mobile ul {
+    .wmrmkmenulist:not(.is-collapsed) .wmrmklanguages-mobile ul {
       display: flex !important;
       flex-direction: row !important;
       flex-wrap: wrap;
@@ -311,28 +311,28 @@
 
   /* Küçük Mobil */
   @media screen and (max-width: 768px) {
-    .apt6x {
+    .wmrmk {
       padding: 8px 0;
     }
 
-    .apt6xheader {
+    .wmrmkheader {
       padding: 0 15px;
     }
 
-    .apt6xbodylogo {
+    .wmrmkbodylogo {
       max-width: 60vw;
     }
 
-    .apt6xmenulist ul a {
+    .wmrmkmenulist ul a {
       font-size: 14px;
       padding: 12px 20px;
     }
 
-    .apt6xmenumobil {
+    .wmrmkmenumobil {
       padding: 6px 10px;
     }
 
-    .apt6xmenumobil .material-symbols-outlined {
+    .wmrmkmenumobil .material-symbols-outlined {
       font-size: 24px;
     }
   }
@@ -342,7 +342,7 @@
     justify-content: start;
   }
 
-  .jksoh {
+  .zg1ut {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -351,11 +351,11 @@
     box-sizing: border-box;
   }
 
-  .jksoh * {
+  .zg1ut * {
     box-sizing: border-box;
   }
 
-  .jksoh-menu-btn {
+  .zg1ut-menu-btn {
     display: none;
     background-color: #009a96;
     padding: 10px 20px;
@@ -367,11 +367,11 @@
     align-items: center;
   }
 
-  .jksoh-menu-btn .jksoh-icon {
+  .zg1ut-menu-btn .zg1ut-icon {
     font-size: 20px;
   }
 
-  .jksoh-menu {
+  .zg1ut-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -382,15 +382,15 @@
     float: left;
   }
 
-  .jksoh-desc {
+  .zg1ut-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .jksoh-menu-link,
-  .jksoh-top {
+  .zg1ut-menu-link,
+  .zg1ut-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -405,52 +405,52 @@
     text-align: left;
   }
 
-  .jksoh-menu-link.active,
-  .jksoh-menu-link:hover,
-  .jksoh-top.active,
-  .jksoh-top:hover {
+  .zg1ut-menu-link.active,
+  .zg1ut-menu-link:hover,
+  .zg1ut-top.active,
+  .zg1ut-top:hover {
     background-color: #116f65;
     color: #fff;
   }
 
-  .jksoh-menu-group {
+  .zg1ut-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .jksoh-top {
+  .zg1ut-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .jksoh-top > div {
+  .zg1ut-top > div {
     text-align: left;
   }
 
-  .jksoh-top .jksoh-icon {
+  .zg1ut-top .zg1ut-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .jksoh-menu-group.open .jksoh-top .jksoh-icon {
+  .zg1ut-menu-group.open .zg1ut-top .zg1ut-icon {
     transform: rotate(180deg);
   }
 
-  .jksoh-sub {
+  .zg1ut-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .jksoh-sub.show {
+  .zg1ut-sub.show {
     display: flex;
   }
 
-  .jksoh-sub-link {
+  .zg1ut-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -460,13 +460,13 @@
     text-align: left;
   }
 
-  .jksoh-sub-link.active,
-  .jksoh-sub-link:hover {
+  .zg1ut-sub-link.active,
+  .zg1ut-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .jksoh-desc-menu {
+  .zg1ut-desc-menu {
     width: 200px;
     background-color: #116f65;
     display: flex;
@@ -474,19 +474,19 @@
     border-radius: 5px;
   }
 
-  .jksoh-desc-menu > div {
+  .zg1ut-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .jksoh-desc-body {
+  .zg1ut-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .jksoh-title {
+  .zg1ut-title {
     width: 100%;
     height: 100px;
     background-color: #009a96;
@@ -499,7 +499,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .jksoh-title::before {
+  .zg1ut-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -514,57 +514,104 @@
     z-index: 1;
   }
 
-  .jksoh-title span {
+  .zg1ut-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
+    margin: 0;
+    color: --textcolor-- !important;
   }
 
-  .jksoh-body {
+  .zg1ut-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .jksoh-img {
+  .zg1ut-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .jksoh-img img {
+  .zg1ut-img img {
     width: 100%;
   }
 
 
-  @media screen and (min-width: 1024px) {
-    .jksoh-desc {
+  @media screen and (min-width: 1025px) {
+    .zg1ut-menu-overlay {
+      display: none !important;
+    }
+
+    .zg1ut-menu-close {
+      display: none !important;
+    }
+
+    .zg1ut-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .jksoh-menu {
-    padding: 10px;
+    .zg1ut-menu {
+      position: static !important;
+      left: auto !important;
+      width: 250px !important;
+      max-width: none !important;
+      height: auto !important;
+      display: flex !important;
+      visibility: visible !important;
+      box-shadow: none !important;
+      padding: 10px;
     }
 
-    .jksoh-menu-link {
+    .zg1ut-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .jksoh-top {
+    .zg1ut-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .jksoh-menu-btn {
+    .zg1ut-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
+      border: none;
+      position: relative;
+      z-index: 1;
     }
 
-    .jksoh {
+    .zg1ut-menu-btn:focus {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
+
+    /* Overlay/Backdrop */
+    .zg1ut-menu-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9998;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .zg1ut-menu-overlay.active {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .zg1ut {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -573,30 +620,76 @@
       margin-top: 0px;
     }
 
-    .jksoh-img {
+    .zg1ut-img {
       width: 100%;
     }
 
-    .jksoh-body {
+    .zg1ut-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
-    .jksoh-menu {
-      width: 100%;
-      float: none;
-      flex-direction: column;
-      order: 1;
-      display: none;
-      gap: 10px;
-    }
-
-    .jksoh-menu.active {
+    /* Slide-in Menü - Soldan */
+    .zg1ut-menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 80%;
+      max-width: 320px;
+      height: 100%;
+      background-color: var(--bgcolor);
+      z-index: 9999;
       display: flex;
+      flex-direction: column;
+      transition: left 0.3s ease;
+      overflow-y: auto;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+      float: none;
+      order: 1;
+      gap: 0;
+      padding: 0;
+      border-radius: 0;
+      visibility: hidden;
     }
 
-    .jksoh-desc {
+    .zg1ut-menu.active {
+      left: 0;
+      visibility: visible;
+    }
+
+    /* Kapatma Butonu */
+    .zg1ut-menu-close {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 15px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: inherit;
+      font-size: 28px;
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    /* Menü içeriği için padding */
+    .zg1ut-menu > .zg1ut-menu-group,
+    .zg1ut-menu > .zg1ut-menu-link {
+      padding: 10px;
+    }
+
+    .zg1ut-menu-close span {
+      font-size: 28px;
+    }
+
+    .zg1ut-menu-close:focus {
+      outline: 2px solid currentColor;
+      outline-offset: -2px;
+    }
+
+    .zg1ut-desc {
       width: 100% !important;
       order: 2;
     }
