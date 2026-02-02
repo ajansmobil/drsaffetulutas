@@ -1,6 +1,6 @@
 
   /* Ana Container */
-  .jfark {
+  .tovii {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
   }
 
   /* Header - Logo ve Dil Seçici */
-  .jfarkheader {
+  .toviiheader {
     display: flex;
     width: var(--max);
     align-items: center;
@@ -19,19 +19,19 @@
     padding: 0 10px;
   }
 
-  .jfarkbody {
+  .toviibody {
     display: flex;
     align-items: center;
   }
 
-  .jfarkbodylogo {
+  .toviibodylogo {
     height: 100px;
     max-width: 90vw;
     object-fit: contain;
   }
 
   /* Sağ Taraf - Dil Seçici ve Hamburger */
-  .jfarkright {
+  .toviiright {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,12 +39,12 @@
   }
 
   /* Dil Seçici - Desktop */
-  .jfarklanguages {
+  .toviilanguages {
     display: flex;
     align-items: center;
   }
 
-  .jfarklanguages ul {
+  .toviilanguages ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -52,11 +52,11 @@
     list-style: none;
   }
 
-  .jfarklanguages li {
+  .toviilanguages li {
     list-style: none;
   }
 
-  .jfarklanguages li a {
+  .toviilanguages li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #279c90;
@@ -70,20 +70,20 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .jfarklanguages li a:hover {
+  .toviilanguages li a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     color: #000;
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .jfarklanguages:empty,
-  .jfarklanguages ul:empty {
+  .toviilanguages:empty,
+  .toviilanguages ul:empty {
     display: none;
   }
 
   /* Hamburger Menü Butonu */
-  .jfarkmenumobil {
+  .toviimenumobil {
     display: none;
     cursor: pointer;
     align-items: center;
@@ -96,17 +96,17 @@
     transition: all 0.3s ease;
   }
 
-  .jfarkmenumobil:hover {
+  .toviimenumobil:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
   }
 
-  .jfarkmenumobil .material-symbols-outlined {
+  .toviimenumobil .material-symbols-outlined {
     font-size: 28px;
   }
 
   /* Menü Listesi */
-  .jfarkmenulist {
+  .toviimenulist {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +119,7 @@
     overflow: hidden;
   }
 
-  .jfarkmenulist ul {
+  .toviimenulist ul {
     list-style-type: none;
     display: flex;
     gap: 2px;
@@ -129,7 +129,7 @@
     width: 100%;
   }
 
-  .jfarkmenulist ul a {
+  .toviimenulist ul a {
     padding: 12px 24px;
     font-size: 15px;
     font-weight: 500;
@@ -146,7 +146,7 @@
     width: 100%;
   }
 
-  .jfarkmenulist ul a::before {
+  .toviimenulist ul a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -158,33 +158,33 @@
     transition: width 0.3s ease;
   }
 
-  .jfarkmenulist ul a:hover {
+  .toviimenulist ul a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-1px);
   }
 
-  .jfarkmenulist ul a:hover::before {
+  .toviimenulist ul a:hover::before {
     width: calc(100% - 20px);
   }
 
-  .jfarkmenuactive {
+  .toviimenuactive {
     background-color: rgba(255, 255, 255, 0.2) !important;
     font-weight: 600;
   }
 
-  .jfarkmenuactive::before {
+  .toviimenuactive::before {
     width: calc(100% - 20px) !important;
   }
 
   /* Dil Seçici - Mobil */
-  .jfarklanguages-mobile {
+  .toviilanguages-mobile {
     display: none;
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .jfarklanguages-mobile ul {
+  .toviilanguages-mobile ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -196,12 +196,12 @@
     align-items: center;
   }
 
-  .jfarklanguages-mobile li {
+  .toviilanguages-mobile li {
     list-style: none;
     display: flex;
   }
 
-  .jfarklanguages-mobile li a {
+  .toviilanguages-mobile li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #fff;
@@ -215,33 +215,33 @@
     white-space: nowrap;
   }
 
-  .jfarklanguages-mobile li a:hover {
+  .toviilanguages-mobile li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-1px);
   }
 
-  .jfarklanguages-mobile:empty,
-  .jfarklanguages-mobile ul:empty {
+  .toviilanguages-mobile:empty,
+  .toviilanguages-mobile ul:empty {
     display: none !important;
   }
 
   /* Desktop Görünüm */
   @media screen and (min-width: 1025px) {
-    .jfarkmenumobil {
+    .toviimenumobil {
       display: none !important;
     }
 
-    .jfarkmenulist {
+    .toviimenulist {
       display: flex !important;
       margin-top: 20px;
     }
 
-    .jfarkmenulist ul {
+    .toviimenulist ul {
       justify-content: center;
       gap: 4px;
     }
 
-    .jfarkmenulist ul a {
+    .toviimenulist ul a {
       padding: 14px 28px;
       font-size: 16px;
     }
@@ -249,19 +249,19 @@
 
   /* Tablet ve Mobil */
   @media screen and (max-width: 1024px) {
-    .jfarkheader {
+    .toviiheader {
       width: calc(100% - 20px);
     }
 
-    .jfarkmenumobil {
+    .toviimenumobil {
       display: flex;
     }
 
-    .jfarklanguages {
+    .toviilanguages {
       display: none;
     }
 
-    .jfarkmenulist {
+    .toviimenulist {
       width: calc(100% - 20px);
       margin: 15px auto 0;
       padding: 0;
@@ -271,18 +271,18 @@
       display: none;
     }
 
-    .jfarkmenulist:not(.is-collapsed) {
+    .toviimenulist:not(.is-collapsed) {
       display: flex;
     }
 
-    .jfarkmenulist ul {
+    .toviimenulist ul {
       flex-direction: column;
       gap: 0;
       width: 100%;
       padding: 12px 0;
     }
 
-    .jfarkmenulist ul a {
+    .toviimenulist ul a {
       width: 100%;
       padding: 14px 20px;
       border-radius: 0;
@@ -290,18 +290,18 @@
       justify-content: flex-start;
     }
 
-    .jfarkmenulist ul a:hover {
+    .toviimenulist ul a:hover {
       background-color: rgba(255, 255, 255, 0.1);
       transform: none;
     }
 
-    .jfarkmenulist:not(.is-collapsed) .jfarklanguages-mobile {
+    .toviimenulist:not(.is-collapsed) .toviilanguages-mobile {
       display: flex;
       flex-direction: column;
       padding: 0 20px 15px;
     }
 
-    .jfarkmenulist:not(.is-collapsed) .jfarklanguages-mobile ul {
+    .toviimenulist:not(.is-collapsed) .toviilanguages-mobile ul {
       display: flex !important;
       flex-direction: row !important;
       flex-wrap: wrap;
@@ -311,28 +311,28 @@
 
   /* Küçük Mobil */
   @media screen and (max-width: 768px) {
-    .jfark {
+    .tovii {
       padding: 8px 0;
     }
 
-    .jfarkheader {
+    .toviiheader {
       padding: 0 15px;
     }
 
-    .jfarkbodylogo {
+    .toviibodylogo {
       max-width: 60vw;
     }
 
-    .jfarkmenulist ul a {
+    .toviimenulist ul a {
       font-size: 14px;
       padding: 12px 20px;
     }
 
-    .jfarkmenumobil {
+    .toviimenumobil {
       padding: 6px 10px;
     }
 
-    .jfarkmenumobil .material-symbols-outlined {
+    .toviimenumobil .material-symbols-outlined {
       font-size: 24px;
     }
   }
@@ -342,7 +342,7 @@
     justify-content: start;
   }
 
-  .j4jpy {
+  .n1new {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -351,11 +351,11 @@
     box-sizing: border-box;
   }
 
-  .j4jpy * {
+  .n1new * {
     box-sizing: border-box;
   }
 
-  .j4jpy-menu-btn {
+  .n1new-menu-btn {
     display: none;
     background-color: #009a96;
     padding: 10px 20px;
@@ -367,11 +367,11 @@
     align-items: center;
   }
 
-  .j4jpy-menu-btn .j4jpy-icon {
+  .n1new-menu-btn .n1new-icon {
     font-size: 20px;
   }
 
-  .j4jpy-menu {
+  .n1new-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -382,15 +382,15 @@
     float: left;
   }
 
-  .j4jpy-desc {
+  .n1new-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .j4jpy-menu-link,
-  .j4jpy-top {
+  .n1new-menu-link,
+  .n1new-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -405,52 +405,52 @@
     text-align: left;
   }
 
-  .j4jpy-menu-link.active,
-  .j4jpy-menu-link:hover,
-  .j4jpy-top.active,
-  .j4jpy-top:hover {
+  .n1new-menu-link.active,
+  .n1new-menu-link:hover,
+  .n1new-top.active,
+  .n1new-top:hover {
     background-color: #116f65;
     color: #fff;
   }
 
-  .j4jpy-menu-group {
+  .n1new-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .j4jpy-top {
+  .n1new-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .j4jpy-top > div {
+  .n1new-top > div {
     text-align: left;
   }
 
-  .j4jpy-top .j4jpy-icon {
+  .n1new-top .n1new-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .j4jpy-menu-group.open .j4jpy-top .j4jpy-icon {
+  .n1new-menu-group.open .n1new-top .n1new-icon {
     transform: rotate(180deg);
   }
 
-  .j4jpy-sub {
+  .n1new-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .j4jpy-sub.show {
+  .n1new-sub.show {
     display: flex;
   }
 
-  .j4jpy-sub-link {
+  .n1new-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -460,13 +460,13 @@
     text-align: left;
   }
 
-  .j4jpy-sub-link.active,
-  .j4jpy-sub-link:hover {
+  .n1new-sub-link.active,
+  .n1new-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .j4jpy-desc-menu {
+  .n1new-desc-menu {
     width: 200px;
     background-color: #116f65;
     display: flex;
@@ -474,19 +474,19 @@
     border-radius: 5px;
   }
 
-  .j4jpy-desc-menu > div {
+  .n1new-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .j4jpy-desc-body {
+  .n1new-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .j4jpy-title {
+  .n1new-title {
     width: 100%;
     height: 100px;
     background-color: #009a96;
@@ -499,7 +499,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .j4jpy-title::before {
+  .n1new-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -514,7 +514,7 @@
     z-index: 1;
   }
 
-  .j4jpy-title h1 {
+  .n1new-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -522,39 +522,39 @@
     color: #fff !important;
   }
 
-  .j4jpy-body {
+  .n1new-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .j4jpy-img {
+  .n1new-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .j4jpy-img img {
+  .n1new-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .j4jpy-menu-overlay {
+    .n1new-menu-overlay {
       display: none !important;
     }
 
-    .j4jpy-menu-close {
+    .n1new-menu-close {
       display: none !important;
     }
 
-    .j4jpy-desc {
+    .n1new-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .j4jpy-menu {
+    .n1new-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -566,17 +566,17 @@
       padding: 10px;
     }
 
-    .j4jpy-menu-link {
+    .n1new-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .j4jpy-top {
+    .n1new-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .j4jpy-menu-btn {
+    .n1new-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -585,13 +585,13 @@
       z-index: 1;
     }
 
-    .j4jpy-menu-btn:focus {
+    .n1new-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .j4jpy-menu-overlay {
+    .n1new-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -605,13 +605,13 @@
       pointer-events: none;
     }
 
-    .j4jpy-menu-overlay.active {
+    .n1new-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .j4jpy {
+    .n1new {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -620,18 +620,18 @@
       margin-top: 0px;
     }
 
-    .j4jpy-img {
+    .n1new-img {
       width: 100%;
     }
 
-    .j4jpy-body {
+    .n1new-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .j4jpy-menu {
+    .n1new-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -653,13 +653,13 @@
       visibility: hidden;
     }
 
-    .j4jpy-menu.active {
+    .n1new-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .j4jpy-menu-close {
+    .n1new-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -675,21 +675,21 @@
     }
 
     /* Menü içeriği için padding */
-    .j4jpy-menu > .j4jpy-menu-group,
-    .j4jpy-menu > .j4jpy-menu-link {
+    .n1new-menu > .n1new-menu-group,
+    .n1new-menu > .n1new-menu-link {
       padding: 10px;
     }
 
-    .j4jpy-menu-close span {
+    .n1new-menu-close span {
       font-size: 28px;
     }
 
-    .j4jpy-menu-close:focus {
+    .n1new-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .j4jpy-desc {
+    .n1new-desc {
       width: 100% !important;
       order: 2;
     }
