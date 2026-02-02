@@ -1,6 +1,6 @@
 
   /* Ana Container */
-  .drk60 {
+  .mdqvk {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
   }
 
   /* Header - Logo ve Dil Seçici */
-  .drk60header {
+  .mdqvkheader {
     display: flex;
     width: var(--max);
     align-items: center;
@@ -19,19 +19,19 @@
     padding: 0 10px;
   }
 
-  .drk60body {
+  .mdqvkbody {
     display: flex;
     align-items: center;
   }
 
-  .drk60bodylogo {
+  .mdqvkbodylogo {
     height: 100px;
     max-width: 90vw;
     object-fit: contain;
   }
 
   /* Sağ Taraf - Dil Seçici ve Hamburger */
-  .drk60right {
+  .mdqvkright {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,12 +39,12 @@
   }
 
   /* Dil Seçici - Desktop */
-  .drk60languages {
+  .mdqvklanguages {
     display: flex;
     align-items: center;
   }
 
-  .drk60languages ul {
+  .mdqvklanguages ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -52,11 +52,11 @@
     list-style: none;
   }
 
-  .drk60languages li {
+  .mdqvklanguages li {
     list-style: none;
   }
 
-  .drk60languages li a {
+  .mdqvklanguages li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #279c90;
@@ -70,20 +70,20 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .drk60languages li a:hover {
+  .mdqvklanguages li a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     color: #000;
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .drk60languages:empty,
-  .drk60languages ul:empty {
+  .mdqvklanguages:empty,
+  .mdqvklanguages ul:empty {
     display: none;
   }
 
   /* Hamburger Menü Butonu */
-  .drk60menumobil {
+  .mdqvkmenumobil {
     display: none;
     cursor: pointer;
     align-items: center;
@@ -96,17 +96,17 @@
     transition: all 0.3s ease;
   }
 
-  .drk60menumobil:hover {
+  .mdqvkmenumobil:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
   }
 
-  .drk60menumobil .material-symbols-outlined {
+  .mdqvkmenumobil .material-symbols-outlined {
     font-size: 28px;
   }
 
   /* Menü Listesi */
-  .drk60menulist {
+  .mdqvkmenulist {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +119,7 @@
     overflow: hidden;
   }
 
-  .drk60menulist ul {
+  .mdqvkmenulist ul {
     list-style-type: none;
     display: flex;
     gap: 2px;
@@ -129,7 +129,7 @@
     width: 100%;
   }
 
-  .drk60menulist ul a {
+  .mdqvkmenulist ul a {
     padding: 12px 24px;
     font-size: 15px;
     font-weight: 500;
@@ -146,7 +146,7 @@
     width: 100%;
   }
 
-  .drk60menulist ul a::before {
+  .mdqvkmenulist ul a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -158,33 +158,33 @@
     transition: width 0.3s ease;
   }
 
-  .drk60menulist ul a:hover {
+  .mdqvkmenulist ul a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-1px);
   }
 
-  .drk60menulist ul a:hover::before {
+  .mdqvkmenulist ul a:hover::before {
     width: calc(100% - 20px);
   }
 
-  .drk60menuactive {
+  .mdqvkmenuactive {
     background-color: rgba(255, 255, 255, 0.2) !important;
     font-weight: 600;
   }
 
-  .drk60menuactive::before {
+  .mdqvkmenuactive::before {
     width: calc(100% - 20px) !important;
   }
 
   /* Dil Seçici - Mobil */
-  .drk60languages-mobile {
+  .mdqvklanguages-mobile {
     display: none;
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .drk60languages-mobile ul {
+  .mdqvklanguages-mobile ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -196,12 +196,12 @@
     align-items: center;
   }
 
-  .drk60languages-mobile li {
+  .mdqvklanguages-mobile li {
     list-style: none;
     display: flex;
   }
 
-  .drk60languages-mobile li a {
+  .mdqvklanguages-mobile li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #fff;
@@ -215,33 +215,33 @@
     white-space: nowrap;
   }
 
-  .drk60languages-mobile li a:hover {
+  .mdqvklanguages-mobile li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-1px);
   }
 
-  .drk60languages-mobile:empty,
-  .drk60languages-mobile ul:empty {
+  .mdqvklanguages-mobile:empty,
+  .mdqvklanguages-mobile ul:empty {
     display: none !important;
   }
 
   /* Desktop Görünüm */
   @media screen and (min-width: 1025px) {
-    .drk60menumobil {
+    .mdqvkmenumobil {
       display: none !important;
     }
 
-    .drk60menulist {
+    .mdqvkmenulist {
       display: flex !important;
       margin-top: 20px;
     }
 
-    .drk60menulist ul {
+    .mdqvkmenulist ul {
       justify-content: center;
       gap: 4px;
     }
 
-    .drk60menulist ul a {
+    .mdqvkmenulist ul a {
       padding: 14px 28px;
       font-size: 16px;
     }
@@ -249,19 +249,19 @@
 
   /* Tablet ve Mobil */
   @media screen and (max-width: 1024px) {
-    .drk60header {
+    .mdqvkheader {
       width: calc(100% - 20px);
     }
 
-    .drk60menumobil {
+    .mdqvkmenumobil {
       display: flex;
     }
 
-    .drk60languages {
+    .mdqvklanguages {
       display: none;
     }
 
-    .drk60menulist {
+    .mdqvkmenulist {
       width: calc(100% - 20px);
       margin: 15px auto 0;
       padding: 0;
@@ -271,18 +271,18 @@
       display: none;
     }
 
-    .drk60menulist:not(.is-collapsed) {
+    .mdqvkmenulist:not(.is-collapsed) {
       display: flex;
     }
 
-    .drk60menulist ul {
+    .mdqvkmenulist ul {
       flex-direction: column;
       gap: 0;
       width: 100%;
       padding: 12px 0;
     }
 
-    .drk60menulist ul a {
+    .mdqvkmenulist ul a {
       width: 100%;
       padding: 14px 20px;
       border-radius: 0;
@@ -290,18 +290,18 @@
       justify-content: flex-start;
     }
 
-    .drk60menulist ul a:hover {
+    .mdqvkmenulist ul a:hover {
       background-color: rgba(255, 255, 255, 0.1);
       transform: none;
     }
 
-    .drk60menulist:not(.is-collapsed) .drk60languages-mobile {
+    .mdqvkmenulist:not(.is-collapsed) .mdqvklanguages-mobile {
       display: flex;
       flex-direction: column;
       padding: 0 20px 15px;
     }
 
-    .drk60menulist:not(.is-collapsed) .drk60languages-mobile ul {
+    .mdqvkmenulist:not(.is-collapsed) .mdqvklanguages-mobile ul {
       display: flex !important;
       flex-direction: row !important;
       flex-wrap: wrap;
@@ -311,28 +311,28 @@
 
   /* Küçük Mobil */
   @media screen and (max-width: 768px) {
-    .drk60 {
+    .mdqvk {
       padding: 8px 0;
     }
 
-    .drk60header {
+    .mdqvkheader {
       padding: 0 15px;
     }
 
-    .drk60bodylogo {
+    .mdqvkbodylogo {
       max-width: 60vw;
     }
 
-    .drk60menulist ul a {
+    .mdqvkmenulist ul a {
       font-size: 14px;
       padding: 12px 20px;
     }
 
-    .drk60menumobil {
+    .mdqvkmenumobil {
       padding: 6px 10px;
     }
 
-    .drk60menumobil .material-symbols-outlined {
+    .mdqvkmenumobil .material-symbols-outlined {
       font-size: 24px;
     }
   }
@@ -342,7 +342,7 @@
     justify-content: start;
   }
 
-  .um1f5 {
+  .vim3a {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -351,11 +351,11 @@
     box-sizing: border-box;
   }
 
-  .um1f5 * {
+  .vim3a * {
     box-sizing: border-box;
   }
 
-  .um1f5-menu-btn {
+  .vim3a-menu-btn {
     display: none;
     background-color: #009a96;
     padding: 10px 20px;
@@ -367,11 +367,11 @@
     align-items: center;
   }
 
-  .um1f5-menu-btn .um1f5-icon {
+  .vim3a-menu-btn .vim3a-icon {
     font-size: 20px;
   }
 
-  .um1f5-menu {
+  .vim3a-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -382,15 +382,15 @@
     float: left;
   }
 
-  .um1f5-desc {
+  .vim3a-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .um1f5-menu-link,
-  .um1f5-top {
+  .vim3a-menu-link,
+  .vim3a-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -405,52 +405,52 @@
     text-align: left;
   }
 
-  .um1f5-menu-link.active,
-  .um1f5-menu-link:hover,
-  .um1f5-top.active,
-  .um1f5-top:hover {
+  .vim3a-menu-link.active,
+  .vim3a-menu-link:hover,
+  .vim3a-top.active,
+  .vim3a-top:hover {
     background-color: #116f65;
     color: #fff;
   }
 
-  .um1f5-menu-group {
+  .vim3a-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .um1f5-top {
+  .vim3a-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .um1f5-top > div {
+  .vim3a-top > div {
     text-align: left;
   }
 
-  .um1f5-top .um1f5-icon {
+  .vim3a-top .vim3a-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .um1f5-menu-group.open .um1f5-top .um1f5-icon {
+  .vim3a-menu-group.open .vim3a-top .vim3a-icon {
     transform: rotate(180deg);
   }
 
-  .um1f5-sub {
+  .vim3a-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .um1f5-sub.show {
+  .vim3a-sub.show {
     display: flex;
   }
 
-  .um1f5-sub-link {
+  .vim3a-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -460,13 +460,13 @@
     text-align: left;
   }
 
-  .um1f5-sub-link.active,
-  .um1f5-sub-link:hover {
+  .vim3a-sub-link.active,
+  .vim3a-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .um1f5-desc-menu {
+  .vim3a-desc-menu {
     width: 200px;
     background-color: #116f65;
     display: flex;
@@ -474,19 +474,19 @@
     border-radius: 5px;
   }
 
-  .um1f5-desc-menu > div {
+  .vim3a-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .um1f5-desc-body {
+  .vim3a-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .um1f5-title {
+  .vim3a-title {
     width: 100%;
     height: 100px;
     background-color: #009a96;
@@ -499,7 +499,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .um1f5-title::before {
+  .vim3a-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -514,7 +514,7 @@
     z-index: 1;
   }
 
-  .um1f5-title h1 {
+  .vim3a-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -522,39 +522,39 @@
     color: #fff !important;
   }
 
-  .um1f5-body {
+  .vim3a-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .um1f5-img {
+  .vim3a-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .um1f5-img img {
+  .vim3a-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .um1f5-menu-overlay {
+    .vim3a-menu-overlay {
       display: none !important;
     }
 
-    .um1f5-menu-close {
+    .vim3a-menu-close {
       display: none !important;
     }
 
-    .um1f5-desc {
+    .vim3a-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .um1f5-menu {
+    .vim3a-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -566,17 +566,17 @@
       padding: 10px;
     }
 
-    .um1f5-menu-link {
+    .vim3a-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .um1f5-top {
+    .vim3a-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .um1f5-menu-btn {
+    .vim3a-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -585,13 +585,13 @@
       z-index: 1;
     }
 
-    .um1f5-menu-btn:focus {
+    .vim3a-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .um1f5-menu-overlay {
+    .vim3a-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -605,13 +605,13 @@
       pointer-events: none;
     }
 
-    .um1f5-menu-overlay.active {
+    .vim3a-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .um1f5 {
+    .vim3a {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -620,18 +620,18 @@
       margin-top: 0px;
     }
 
-    .um1f5-img {
+    .vim3a-img {
       width: 100%;
     }
 
-    .um1f5-body {
+    .vim3a-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .um1f5-menu {
+    .vim3a-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -653,13 +653,13 @@
       visibility: hidden;
     }
 
-    .um1f5-menu.active {
+    .vim3a-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .um1f5-menu-close {
+    .vim3a-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -675,21 +675,21 @@
     }
 
     /* Menü içeriği için padding */
-    .um1f5-menu > .um1f5-menu-group,
-    .um1f5-menu > .um1f5-menu-link {
+    .vim3a-menu > .vim3a-menu-group,
+    .vim3a-menu > .vim3a-menu-link {
       padding: 10px;
     }
 
-    .um1f5-menu-close span {
+    .vim3a-menu-close span {
       font-size: 28px;
     }
 
-    .um1f5-menu-close:focus {
+    .vim3a-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .um1f5-desc {
+    .vim3a-desc {
       width: 100% !important;
       order: 2;
     }
