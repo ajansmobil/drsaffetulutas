@@ -1,6 +1,6 @@
 
   /* Ana Container */
-  .vimjx {
+  .gjnis {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
   }
 
   /* Header - Logo ve Dil Seçici */
-  .vimjxheader {
+  .gjnisheader {
     display: flex;
     width: var(--max);
     align-items: center;
@@ -19,19 +19,19 @@
     padding: 0 10px;
   }
 
-  .vimjxbody {
+  .gjnisbody {
     display: flex;
     align-items: center;
   }
 
-  .vimjxbodylogo {
+  .gjnisbodylogo {
     height: 100px;
     max-width: 90vw;
     object-fit: contain;
   }
 
   /* Sağ Taraf - Dil Seçici ve Hamburger */
-  .vimjxright {
+  .gjnisright {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,12 +39,12 @@
   }
 
   /* Dil Seçici - Desktop */
-  .vimjxlanguages {
+  .gjnislanguages {
     display: flex;
     align-items: center;
   }
 
-  .vimjxlanguages ul {
+  .gjnislanguages ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -52,11 +52,11 @@
     list-style: none;
   }
 
-  .vimjxlanguages li {
+  .gjnislanguages li {
     list-style: none;
   }
 
-  .vimjxlanguages li a {
+  .gjnislanguages li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #279c90;
@@ -70,20 +70,20 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .vimjxlanguages li a:hover {
+  .gjnislanguages li a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     color: #000;
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .vimjxlanguages:empty,
-  .vimjxlanguages ul:empty {
+  .gjnislanguages:empty,
+  .gjnislanguages ul:empty {
     display: none;
   }
 
   /* Hamburger Menü Butonu */
-  .vimjxmenumobil {
+  .gjnismenumobil {
     display: none;
     cursor: pointer;
     align-items: center;
@@ -96,17 +96,17 @@
     transition: all 0.3s ease;
   }
 
-  .vimjxmenumobil:hover {
+  .gjnismenumobil:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
   }
 
-  .vimjxmenumobil .material-symbols-outlined {
+  .gjnismenumobil .material-symbols-outlined {
     font-size: 28px;
   }
 
   /* Menü Listesi */
-  .vimjxmenulist {
+  .gjnismenulist {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +119,7 @@
     overflow: hidden;
   }
 
-  .vimjxmenulist ul {
+  .gjnismenulist ul {
     list-style-type: none;
     display: flex;
     gap: 2px;
@@ -129,7 +129,7 @@
     width: 100%;
   }
 
-  .vimjxmenulist ul a {
+  .gjnismenulist ul a {
     padding: 12px 24px;
     font-size: 15px;
     font-weight: 500;
@@ -146,7 +146,7 @@
     width: 100%;
   }
 
-  .vimjxmenulist ul a::before {
+  .gjnismenulist ul a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -158,33 +158,33 @@
     transition: width 0.3s ease;
   }
 
-  .vimjxmenulist ul a:hover {
+  .gjnismenulist ul a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-1px);
   }
 
-  .vimjxmenulist ul a:hover::before {
+  .gjnismenulist ul a:hover::before {
     width: calc(100% - 20px);
   }
 
-  .vimjxmenuactive {
+  .gjnismenuactive {
     background-color: rgba(255, 255, 255, 0.2) !important;
     font-weight: 600;
   }
 
-  .vimjxmenuactive::before {
+  .gjnismenuactive::before {
     width: calc(100% - 20px) !important;
   }
 
   /* Dil Seçici - Mobil */
-  .vimjxlanguages-mobile {
+  .gjnislanguages-mobile {
     display: none;
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .vimjxlanguages-mobile ul {
+  .gjnislanguages-mobile ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -196,12 +196,12 @@
     align-items: center;
   }
 
-  .vimjxlanguages-mobile li {
+  .gjnislanguages-mobile li {
     list-style: none;
     display: flex;
   }
 
-  .vimjxlanguages-mobile li a {
+  .gjnislanguages-mobile li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #fff;
@@ -215,33 +215,33 @@
     white-space: nowrap;
   }
 
-  .vimjxlanguages-mobile li a:hover {
+  .gjnislanguages-mobile li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-1px);
   }
 
-  .vimjxlanguages-mobile:empty,
-  .vimjxlanguages-mobile ul:empty {
+  .gjnislanguages-mobile:empty,
+  .gjnislanguages-mobile ul:empty {
     display: none !important;
   }
 
   /* Desktop Görünüm */
   @media screen and (min-width: 1025px) {
-    .vimjxmenumobil {
+    .gjnismenumobil {
       display: none !important;
     }
 
-    .vimjxmenulist {
+    .gjnismenulist {
       display: flex !important;
       margin-top: 20px;
     }
 
-    .vimjxmenulist ul {
+    .gjnismenulist ul {
       justify-content: center;
       gap: 4px;
     }
 
-    .vimjxmenulist ul a {
+    .gjnismenulist ul a {
       padding: 14px 28px;
       font-size: 16px;
     }
@@ -249,19 +249,19 @@
 
   /* Tablet ve Mobil */
   @media screen and (max-width: 1024px) {
-    .vimjxheader {
+    .gjnisheader {
       width: calc(100% - 20px);
     }
 
-    .vimjxmenumobil {
+    .gjnismenumobil {
       display: flex;
     }
 
-    .vimjxlanguages {
+    .gjnislanguages {
       display: none;
     }
 
-    .vimjxmenulist {
+    .gjnismenulist {
       width: calc(100% - 20px);
       margin: 15px auto 0;
       padding: 0;
@@ -271,18 +271,18 @@
       display: none;
     }
 
-    .vimjxmenulist:not(.is-collapsed) {
+    .gjnismenulist:not(.is-collapsed) {
       display: flex;
     }
 
-    .vimjxmenulist ul {
+    .gjnismenulist ul {
       flex-direction: column;
       gap: 0;
       width: 100%;
       padding: 12px 0;
     }
 
-    .vimjxmenulist ul a {
+    .gjnismenulist ul a {
       width: 100%;
       padding: 14px 20px;
       border-radius: 0;
@@ -290,18 +290,18 @@
       justify-content: flex-start;
     }
 
-    .vimjxmenulist ul a:hover {
+    .gjnismenulist ul a:hover {
       background-color: rgba(255, 255, 255, 0.1);
       transform: none;
     }
 
-    .vimjxmenulist:not(.is-collapsed) .vimjxlanguages-mobile {
+    .gjnismenulist:not(.is-collapsed) .gjnislanguages-mobile {
       display: flex;
       flex-direction: column;
       padding: 0 20px 15px;
     }
 
-    .vimjxmenulist:not(.is-collapsed) .vimjxlanguages-mobile ul {
+    .gjnismenulist:not(.is-collapsed) .gjnislanguages-mobile ul {
       display: flex !important;
       flex-direction: row !important;
       flex-wrap: wrap;
@@ -311,28 +311,28 @@
 
   /* Küçük Mobil */
   @media screen and (max-width: 768px) {
-    .vimjx {
+    .gjnis {
       padding: 8px 0;
     }
 
-    .vimjxheader {
+    .gjnisheader {
       padding: 0 15px;
     }
 
-    .vimjxbodylogo {
+    .gjnisbodylogo {
       max-width: 60vw;
     }
 
-    .vimjxmenulist ul a {
+    .gjnismenulist ul a {
       font-size: 14px;
       padding: 12px 20px;
     }
 
-    .vimjxmenumobil {
+    .gjnismenumobil {
       padding: 6px 10px;
     }
 
-    .vimjxmenumobil .material-symbols-outlined {
+    .gjnismenumobil .material-symbols-outlined {
       font-size: 24px;
     }
   }
@@ -342,7 +342,7 @@
     justify-content: start;
   }
 
-  .lyhyx {
+  .c1q3d {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -351,11 +351,11 @@
     box-sizing: border-box;
   }
 
-  .lyhyx * {
+  .c1q3d * {
     box-sizing: border-box;
   }
 
-  .lyhyx-menu-btn {
+  .c1q3d-menu-btn {
     display: none;
     background-color: #009a96;
     padding: 10px 20px;
@@ -367,11 +367,11 @@
     align-items: center;
   }
 
-  .lyhyx-menu-btn .lyhyx-icon {
+  .c1q3d-menu-btn .c1q3d-icon {
     font-size: 20px;
   }
 
-  .lyhyx-menu {
+  .c1q3d-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -382,15 +382,15 @@
     float: left;
   }
 
-  .lyhyx-desc {
+  .c1q3d-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .lyhyx-menu-link,
-  .lyhyx-top {
+  .c1q3d-menu-link,
+  .c1q3d-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -405,52 +405,52 @@
     text-align: left;
   }
 
-  .lyhyx-menu-link.active,
-  .lyhyx-menu-link:hover,
-  .lyhyx-top.active,
-  .lyhyx-top:hover {
+  .c1q3d-menu-link.active,
+  .c1q3d-menu-link:hover,
+  .c1q3d-top.active,
+  .c1q3d-top:hover {
     background-color: #116f65;
     color: #fff;
   }
 
-  .lyhyx-menu-group {
+  .c1q3d-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .lyhyx-top {
+  .c1q3d-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .lyhyx-top > div {
+  .c1q3d-top > div {
     text-align: left;
   }
 
-  .lyhyx-top .lyhyx-icon {
+  .c1q3d-top .c1q3d-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .lyhyx-menu-group.open .lyhyx-top .lyhyx-icon {
+  .c1q3d-menu-group.open .c1q3d-top .c1q3d-icon {
     transform: rotate(180deg);
   }
 
-  .lyhyx-sub {
+  .c1q3d-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .lyhyx-sub.show {
+  .c1q3d-sub.show {
     display: flex;
   }
 
-  .lyhyx-sub-link {
+  .c1q3d-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -460,13 +460,13 @@
     text-align: left;
   }
 
-  .lyhyx-sub-link.active,
-  .lyhyx-sub-link:hover {
+  .c1q3d-sub-link.active,
+  .c1q3d-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .lyhyx-desc-menu {
+  .c1q3d-desc-menu {
     width: 200px;
     background-color: #116f65;
     display: flex;
@@ -474,19 +474,19 @@
     border-radius: 5px;
   }
 
-  .lyhyx-desc-menu > div {
+  .c1q3d-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .lyhyx-desc-body {
+  .c1q3d-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .lyhyx-title {
+  .c1q3d-title {
     width: 100%;
     height: 100px;
     background-color: #009a96;
@@ -499,7 +499,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .lyhyx-title::before {
+  .c1q3d-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -514,7 +514,7 @@
     z-index: 1;
   }
 
-  .lyhyx-title h1 {
+  .c1q3d-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -522,39 +522,39 @@
     color: #fff !important;
   }
 
-  .lyhyx-body {
+  .c1q3d-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .lyhyx-img {
+  .c1q3d-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .lyhyx-img img {
+  .c1q3d-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .lyhyx-menu-overlay {
+    .c1q3d-menu-overlay {
       display: none !important;
     }
 
-    .lyhyx-menu-close {
+    .c1q3d-menu-close {
       display: none !important;
     }
 
-    .lyhyx-desc {
+    .c1q3d-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .lyhyx-menu {
+    .c1q3d-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -566,17 +566,17 @@
       padding: 10px;
     }
 
-    .lyhyx-menu-link {
+    .c1q3d-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .lyhyx-top {
+    .c1q3d-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .lyhyx-menu-btn {
+    .c1q3d-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -585,13 +585,13 @@
       z-index: 1;
     }
 
-    .lyhyx-menu-btn:focus {
+    .c1q3d-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .lyhyx-menu-overlay {
+    .c1q3d-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -605,13 +605,13 @@
       pointer-events: none;
     }
 
-    .lyhyx-menu-overlay.active {
+    .c1q3d-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .lyhyx {
+    .c1q3d {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -620,18 +620,18 @@
       margin-top: 0px;
     }
 
-    .lyhyx-img {
+    .c1q3d-img {
       width: 100%;
     }
 
-    .lyhyx-body {
+    .c1q3d-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .lyhyx-menu {
+    .c1q3d-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -653,13 +653,13 @@
       visibility: hidden;
     }
 
-    .lyhyx-menu.active {
+    .c1q3d-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .lyhyx-menu-close {
+    .c1q3d-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -675,21 +675,21 @@
     }
 
     /* Menü içeriği için padding */
-    .lyhyx-menu > .lyhyx-menu-group,
-    .lyhyx-menu > .lyhyx-menu-link {
+    .c1q3d-menu > .c1q3d-menu-group,
+    .c1q3d-menu > .c1q3d-menu-link {
       padding: 10px;
     }
 
-    .lyhyx-menu-close span {
+    .c1q3d-menu-close span {
       font-size: 28px;
     }
 
-    .lyhyx-menu-close:focus {
+    .c1q3d-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .lyhyx-desc {
+    .c1q3d-desc {
       width: 100% !important;
       order: 2;
     }
