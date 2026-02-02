@@ -1,6 +1,6 @@
 
   /* Ana Container */
-  .rdttl {
+  .mc739 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
   }
 
   /* Header - Logo ve Dil Seçici */
-  .rdttlheader {
+  .mc739header {
     display: flex;
     width: var(--max);
     align-items: center;
@@ -19,19 +19,19 @@
     padding: 0 10px;
   }
 
-  .rdttlbody {
+  .mc739body {
     display: flex;
     align-items: center;
   }
 
-  .rdttlbodylogo {
+  .mc739bodylogo {
     height: 100px;
     max-width: 90vw;
     object-fit: contain;
   }
 
   /* Sağ Taraf - Dil Seçici ve Hamburger */
-  .rdttlright {
+  .mc739right {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,12 +39,12 @@
   }
 
   /* Dil Seçici - Desktop */
-  .rdttllanguages {
+  .mc739languages {
     display: flex;
     align-items: center;
   }
 
-  .rdttllanguages ul {
+  .mc739languages ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -52,11 +52,11 @@
     list-style: none;
   }
 
-  .rdttllanguages li {
+  .mc739languages li {
     list-style: none;
   }
 
-  .rdttllanguages li a {
+  .mc739languages li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #279c90;
@@ -70,20 +70,20 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .rdttllanguages li a:hover {
+  .mc739languages li a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     color: #000;
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .rdttllanguages:empty,
-  .rdttllanguages ul:empty {
+  .mc739languages:empty,
+  .mc739languages ul:empty {
     display: none;
   }
 
   /* Hamburger Menü Butonu */
-  .rdttlmenumobil {
+  .mc739menumobil {
     display: none;
     cursor: pointer;
     align-items: center;
@@ -96,17 +96,17 @@
     transition: all 0.3s ease;
   }
 
-  .rdttlmenumobil:hover {
+  .mc739menumobil:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
   }
 
-  .rdttlmenumobil .material-symbols-outlined {
+  .mc739menumobil .material-symbols-outlined {
     font-size: 28px;
   }
 
   /* Menü Listesi */
-  .rdttlmenulist {
+  .mc739menulist {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +119,7 @@
     overflow: hidden;
   }
 
-  .rdttlmenulist ul {
+  .mc739menulist ul {
     list-style-type: none;
     display: flex;
     gap: 2px;
@@ -129,7 +129,7 @@
     width: 100%;
   }
 
-  .rdttlmenulist ul a {
+  .mc739menulist ul a {
     padding: 12px 24px;
     font-size: 15px;
     font-weight: 500;
@@ -146,7 +146,7 @@
     width: 100%;
   }
 
-  .rdttlmenulist ul a::before {
+  .mc739menulist ul a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -158,33 +158,33 @@
     transition: width 0.3s ease;
   }
 
-  .rdttlmenulist ul a:hover {
+  .mc739menulist ul a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-1px);
   }
 
-  .rdttlmenulist ul a:hover::before {
+  .mc739menulist ul a:hover::before {
     width: calc(100% - 20px);
   }
 
-  .rdttlmenuactive {
+  .mc739menuactive {
     background-color: rgba(255, 255, 255, 0.2) !important;
     font-weight: 600;
   }
 
-  .rdttlmenuactive::before {
+  .mc739menuactive::before {
     width: calc(100% - 20px) !important;
   }
 
   /* Dil Seçici - Mobil */
-  .rdttllanguages-mobile {
+  .mc739languages-mobile {
     display: none;
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .rdttllanguages-mobile ul {
+  .mc739languages-mobile ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -196,12 +196,12 @@
     align-items: center;
   }
 
-  .rdttllanguages-mobile li {
+  .mc739languages-mobile li {
     list-style: none;
     display: flex;
   }
 
-  .rdttllanguages-mobile li a {
+  .mc739languages-mobile li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #fff;
@@ -215,33 +215,33 @@
     white-space: nowrap;
   }
 
-  .rdttllanguages-mobile li a:hover {
+  .mc739languages-mobile li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-1px);
   }
 
-  .rdttllanguages-mobile:empty,
-  .rdttllanguages-mobile ul:empty {
+  .mc739languages-mobile:empty,
+  .mc739languages-mobile ul:empty {
     display: none !important;
   }
 
   /* Desktop Görünüm */
   @media screen and (min-width: 1025px) {
-    .rdttlmenumobil {
+    .mc739menumobil {
       display: none !important;
     }
 
-    .rdttlmenulist {
+    .mc739menulist {
       display: flex !important;
       margin-top: 20px;
     }
 
-    .rdttlmenulist ul {
+    .mc739menulist ul {
       justify-content: center;
       gap: 4px;
     }
 
-    .rdttlmenulist ul a {
+    .mc739menulist ul a {
       padding: 14px 28px;
       font-size: 16px;
     }
@@ -249,19 +249,19 @@
 
   /* Tablet ve Mobil */
   @media screen and (max-width: 1024px) {
-    .rdttlheader {
+    .mc739header {
       width: calc(100% - 20px);
     }
 
-    .rdttlmenumobil {
+    .mc739menumobil {
       display: flex;
     }
 
-    .rdttllanguages {
+    .mc739languages {
       display: none;
     }
 
-    .rdttlmenulist {
+    .mc739menulist {
       width: calc(100% - 20px);
       margin: 15px auto 0;
       padding: 0;
@@ -271,18 +271,18 @@
       display: none;
     }
 
-    .rdttlmenulist:not(.is-collapsed) {
+    .mc739menulist:not(.is-collapsed) {
       display: flex;
     }
 
-    .rdttlmenulist ul {
+    .mc739menulist ul {
       flex-direction: column;
       gap: 0;
       width: 100%;
       padding: 12px 0;
     }
 
-    .rdttlmenulist ul a {
+    .mc739menulist ul a {
       width: 100%;
       padding: 14px 20px;
       border-radius: 0;
@@ -290,18 +290,18 @@
       justify-content: flex-start;
     }
 
-    .rdttlmenulist ul a:hover {
+    .mc739menulist ul a:hover {
       background-color: rgba(255, 255, 255, 0.1);
       transform: none;
     }
 
-    .rdttlmenulist:not(.is-collapsed) .rdttllanguages-mobile {
+    .mc739menulist:not(.is-collapsed) .mc739languages-mobile {
       display: flex;
       flex-direction: column;
       padding: 0 20px 15px;
     }
 
-    .rdttlmenulist:not(.is-collapsed) .rdttllanguages-mobile ul {
+    .mc739menulist:not(.is-collapsed) .mc739languages-mobile ul {
       display: flex !important;
       flex-direction: row !important;
       flex-wrap: wrap;
@@ -311,28 +311,28 @@
 
   /* Küçük Mobil */
   @media screen and (max-width: 768px) {
-    .rdttl {
+    .mc739 {
       padding: 8px 0;
     }
 
-    .rdttlheader {
+    .mc739header {
       padding: 0 15px;
     }
 
-    .rdttlbodylogo {
+    .mc739bodylogo {
       max-width: 60vw;
     }
 
-    .rdttlmenulist ul a {
+    .mc739menulist ul a {
       font-size: 14px;
       padding: 12px 20px;
     }
 
-    .rdttlmenumobil {
+    .mc739menumobil {
       padding: 6px 10px;
     }
 
-    .rdttlmenumobil .material-symbols-outlined {
+    .mc739menumobil .material-symbols-outlined {
       font-size: 24px;
     }
   }
@@ -342,7 +342,7 @@
     justify-content: start;
   }
 
-  .mvpn5 {
+  .htoee {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -351,11 +351,11 @@
     box-sizing: border-box;
   }
 
-  .mvpn5 * {
+  .htoee * {
     box-sizing: border-box;
   }
 
-  .mvpn5-menu-btn {
+  .htoee-menu-btn {
     display: none;
     background-color: #009a96;
     padding: 10px 20px;
@@ -367,11 +367,11 @@
     align-items: center;
   }
 
-  .mvpn5-menu-btn .mvpn5-icon {
+  .htoee-menu-btn .htoee-icon {
     font-size: 20px;
   }
 
-  .mvpn5-menu {
+  .htoee-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -382,15 +382,15 @@
     float: left;
   }
 
-  .mvpn5-desc {
+  .htoee-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .mvpn5-menu-link,
-  .mvpn5-top {
+  .htoee-menu-link,
+  .htoee-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -405,52 +405,52 @@
     text-align: left;
   }
 
-  .mvpn5-menu-link.active,
-  .mvpn5-menu-link:hover,
-  .mvpn5-top.active,
-  .mvpn5-top:hover {
+  .htoee-menu-link.active,
+  .htoee-menu-link:hover,
+  .htoee-top.active,
+  .htoee-top:hover {
     background-color: #116f65;
     color: #fff;
   }
 
-  .mvpn5-menu-group {
+  .htoee-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .mvpn5-top {
+  .htoee-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .mvpn5-top > div {
+  .htoee-top > div {
     text-align: left;
   }
 
-  .mvpn5-top .mvpn5-icon {
+  .htoee-top .htoee-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .mvpn5-menu-group.open .mvpn5-top .mvpn5-icon {
+  .htoee-menu-group.open .htoee-top .htoee-icon {
     transform: rotate(180deg);
   }
 
-  .mvpn5-sub {
+  .htoee-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .mvpn5-sub.show {
+  .htoee-sub.show {
     display: flex;
   }
 
-  .mvpn5-sub-link {
+  .htoee-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -460,13 +460,13 @@
     text-align: left;
   }
 
-  .mvpn5-sub-link.active,
-  .mvpn5-sub-link:hover {
+  .htoee-sub-link.active,
+  .htoee-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .mvpn5-desc-menu {
+  .htoee-desc-menu {
     width: 200px;
     background-color: #116f65;
     display: flex;
@@ -474,19 +474,19 @@
     border-radius: 5px;
   }
 
-  .mvpn5-desc-menu > div {
+  .htoee-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .mvpn5-desc-body {
+  .htoee-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .mvpn5-title {
+  .htoee-title {
     width: 100%;
     height: 100px;
     background-color: #009a96;
@@ -499,7 +499,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .mvpn5-title::before {
+  .htoee-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -514,7 +514,7 @@
     z-index: 1;
   }
 
-  .mvpn5-title h1 {
+  .htoee-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -522,39 +522,39 @@
     color: #fff !important;
   }
 
-  .mvpn5-body {
+  .htoee-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .mvpn5-img {
+  .htoee-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .mvpn5-img img {
+  .htoee-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .mvpn5-menu-overlay {
+    .htoee-menu-overlay {
       display: none !important;
     }
 
-    .mvpn5-menu-close {
+    .htoee-menu-close {
       display: none !important;
     }
 
-    .mvpn5-desc {
+    .htoee-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .mvpn5-menu {
+    .htoee-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -566,17 +566,17 @@
       padding: 10px;
     }
 
-    .mvpn5-menu-link {
+    .htoee-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .mvpn5-top {
+    .htoee-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .mvpn5-menu-btn {
+    .htoee-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -585,13 +585,13 @@
       z-index: 1;
     }
 
-    .mvpn5-menu-btn:focus {
+    .htoee-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .mvpn5-menu-overlay {
+    .htoee-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -605,13 +605,13 @@
       pointer-events: none;
     }
 
-    .mvpn5-menu-overlay.active {
+    .htoee-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .mvpn5 {
+    .htoee {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -620,18 +620,18 @@
       margin-top: 0px;
     }
 
-    .mvpn5-img {
+    .htoee-img {
       width: 100%;
     }
 
-    .mvpn5-body {
+    .htoee-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .mvpn5-menu {
+    .htoee-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -653,13 +653,13 @@
       visibility: hidden;
     }
 
-    .mvpn5-menu.active {
+    .htoee-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .mvpn5-menu-close {
+    .htoee-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -675,21 +675,21 @@
     }
 
     /* Menü içeriği için padding */
-    .mvpn5-menu > .mvpn5-menu-group,
-    .mvpn5-menu > .mvpn5-menu-link {
+    .htoee-menu > .htoee-menu-group,
+    .htoee-menu > .htoee-menu-link {
       padding: 10px;
     }
 
-    .mvpn5-menu-close span {
+    .htoee-menu-close span {
       font-size: 28px;
     }
 
-    .mvpn5-menu-close:focus {
+    .htoee-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .mvpn5-desc {
+    .htoee-desc {
       width: 100% !important;
       order: 2;
     }
