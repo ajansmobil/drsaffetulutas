@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=a6h45" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=a6h45" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=lnbs3" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=lnbs3" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=a6h45" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=lnbs3" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,35 +52,37 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=a6h45">
+<link rel="stylesheet" href="style.css?v=lnbs3">
 </head>
 
 <body>
-  <div id="header"><div class="gao68">
+  <div id="header"><div class="dddwc">
 
-  <div class="gao68menu-sticky">
+  <div class="dddwcmenu-sticky">
  
-    <div class="gao68header">
-      <div class="gao68body">
+    <div class="dddwcheader">
+      <div class="dddwcbody">
         <a href="/en/"
           ><img
-            src="/img/logo.png?v=a6h45"
+            src="/img/logo.png?v=lnbs3"
             alt="Opr. Dr. Saffet Ulutaş Logo"
-            class="gao68bodylogo"
+            class="dddwcbodylogo"
             loading="lazy"
         /></a>
       </div>
-      <div class="gao68menubody">
-
-       
-
-        <div class="gao68menu" id="menu-slider-root">
-          <div class="gao68menulistbody">
-            <div class="gao68menulist">
+      <div class="dddwcmenubody">
+        <!-- Mobilde sağdan açılan menü (Apple tarzı): overlay + panel -->
+        <div class="dddwcmenuoverlay dddwcmenuoverlay-slider" id="menu-slider-overlay" aria-hidden="true"></div>
+        <div class="dddwcmenu" id="menu-slider-root">
+          <div class="dddwcmenulistbody">
+            <button type="button" class="dddwcmenuclose dddwcmenuclose-slider" onclick="menu_slider_toggle()" aria-label="Close Menu">
+              <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="dddwcmenulist">
               <ul>
                 <a href="/en/">Home </a><a href="/en/hakkimizda/">About</a><a href="/en/hizmetlerimiz/">Our Services</a><a href="/en/saglik-turizmi/">Health Tourism</a><a href="/en/onam-formlari/">Consent Forms</a><a href="/en/i-letisim/">Contact</a>
               </ul>
-              <div class="gao68languages-mobile">
+              <div class="dddwclanguages-mobile">
                 <ul>
                   <li><a href="/tr/"><img height="25" src="/src/lang/tr.png" alt="tr" loading="lazy"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png" alt="en" loading="lazy"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png" alt="ar" loading="lazy"></a></li><li><a href="/de/"><img height="25" src="/src/lang/de.png" alt="de" loading="lazy"></a></li><li><a href="/ru/"><img height="25" src="/src/lang/ru.png" alt="ru" loading="lazy"></a></li>
                 </ul>
@@ -90,15 +92,13 @@
         </div>
 
 
-        <div class="gao68titlebodylang">
+        <div class="dddwctitlebodylang">
           <ul>
             <li><a href="/tr/"><img height="25" src="/src/lang/tr.png" alt="tr" loading="lazy"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png" alt="en" loading="lazy"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png" alt="ar" loading="lazy"></a></li><li><a href="/de/"><img height="25" src="/src/lang/de.png" alt="de" loading="lazy"></a></li><li><a href="/ru/"><img height="25" src="/src/lang/ru.png" alt="ru" loading="lazy"></a></li>
           </ul>
         </div>
-
-
       </div>
-      <button type="button" class="gao68-mobile-toggle" onclick="menu_slider_toggle()">
+      <button type="button" class="dddwc-mobile-toggle" onclick="menu_slider_toggle()">
         <span class="material-symbols-outlined">menu</span>
       </button>
     </div>
@@ -106,9 +106,9 @@
 
 
 
-  <div class="gao68slider">
-    <div class="swiper-container gao68-slider">
-      <div class="swiper-wrapper" id="gao68-slider-wrapper"><div class="swiper-slide"><img  src="/img/ew1aoz/1.webp?v=1770608959998" alt="Opr. Dr. Saffet Ulutaş"  loading="lazy"/></div><div class="swiper-slide"><img loading="lazy" src="/img/ew1aoz/2.webp?v=1770608959998" alt="Opr. Dr. Saffet Ulutaş" /></div><div class="swiper-slide"><img loading="lazy" src="/img/ew1aoz/3.webp?v=1770608959998" alt="Opr. Dr. Saffet Ulutaş" /></div><div class="swiper-slide"><img loading="lazy" src="/img/ew1aoz/4.webp?v=1770608959998" alt="Opr. Dr. Saffet Ulutaş" /></div><div class="swiper-slide"><img loading="lazy" src="/img/ew1aoz/5.webp?v=1770608959998" alt="Opr. Dr. Saffet Ulutaş" /></div></div>
+  <div class="dddwcslider">
+    <div class="swiper-container dddwc-slider">
+      <div class="swiper-wrapper" id="dddwc-slider-wrapper"><div class="swiper-slide"><img  src="/img/ew1aoz/1.webp?v=1770719809261" alt="Opr. Dr. Saffet Ulutaş"  loading="lazy"/></div><div class="swiper-slide"><img loading="lazy" src="/img/ew1aoz/2.webp?v=1770719809261" alt="Opr. Dr. Saffet Ulutaş" /></div><div class="swiper-slide"><img loading="lazy" src="/img/ew1aoz/3.webp?v=1770719809261" alt="Opr. Dr. Saffet Ulutaş" /></div><div class="swiper-slide"><img loading="lazy" src="/img/ew1aoz/4.webp?v=1770719809261" alt="Opr. Dr. Saffet Ulutaş" /></div><div class="swiper-slide"><img loading="lazy" src="/img/ew1aoz/5.webp?v=1770719809261" alt="Opr. Dr. Saffet Ulutaş" /></div></div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
@@ -119,19 +119,50 @@
 </div>
 
 <script>
+  // Mobil menü aç/kapa: sağdan panel + overlay + body scroll kilidi
   if (typeof menu_slider_toggle === "undefined") {
     function menu_slider_toggle() {
       var root = document.getElementById("menu-slider-root");
+      var overlay = document.getElementById("menu-slider-overlay");
       if (!root) {
         return;
       }
-      if (root.classList.contains("gao68menu-open")) {
-        root.classList.remove("gao68menu-open");
+      var isOpen = root.classList.contains("dddwcmenu-open");
+      if (isOpen) {
+        root.classList.remove("dddwcmenu-open");
+        if (overlay) {
+          overlay.classList.remove("active");
+          overlay.setAttribute("aria-hidden", "true");
+        }
+        document.body.style.overflow = "";
       } else {
-        root.classList.add("gao68menu-open");
+        root.classList.add("dddwcmenu-open");
+        if (overlay) {
+          overlay.classList.add("active");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  // Overlay tıklanınca menüyü kapat (Apple tarzı davranış)
+  (function menuSliderOverlayInit() {
+    setTimeout(function() {
+      var overlay = document.getElementById("menu-slider-overlay");
+      var root = document.getElementById("menu-slider-root");
+      if (overlay && root) {
+        overlay.addEventListener("click", function() {
+          if (root.classList.contains("dddwcmenu-open")) {
+            root.classList.remove("dddwcmenu-open");
+            overlay.classList.remove("active");
+            overlay.setAttribute("aria-hidden", "true");
+            document.body.style.overflow = "";
+          }
+        });
+      }
+    }, 100);
+  })();
 
   (function menuSliderInit() {
     // Swiper yüklenene kadar bekle, sonra başlat
@@ -141,7 +172,7 @@
       attempts++;
       if (typeof Swiper === "function") {
         clearInterval(timer);
-        new Swiper(".gao68-slider", {
+        new Swiper(".dddwc-slider", {
           slidesPerView: 1,
           spaceBetween: 30,
           loop: true,
@@ -168,97 +199,97 @@
 
 </div>
   <div id="content"><h1 style="display: none;">Opr. Dr. Saffet Ulutaş</h1>
-<div class="ifvij">
-  <div class="ifvijbody">
-      <div style="animation-delay: 0.3s;" class="ifvijbodyitems left" >
-        <div class="ifvijbodyitem lefts">
-          <a href="/en/estetik-uygulamalar/" class="ifvijbodyitemlink">
-            <div class="ifvijbodyitemimg">
+<div class="qv3bf">
+  <div class="qv3bfbody">
+      <div style="animation-delay: 0.3s;" class="qv3bfbodyitems left" >
+        <div class="qv3bfbodyitem lefts">
+          <a href="/en/estetik-uygulamalar/" class="qv3bfbodyitemlink">
+            <div class="qv3bfbodyitemimg">
               <img src="/page/estetik-uygulamalar/dtygq.webp" alt="Aesthetic Procedures" loading="lazy">
             </div>
 
-            <h2 class="ifvijbodyitemtitle">
+            <h2 class="qv3bfbodyitemtitle">
               Aesthetic Procedures
             </h2>
           </a>
 
-          <div class="ifvijbodyitechile">
+          <div class="qv3bfbodyitechile">
            Comprehensive surgical solutions covering nose, face, body, and ear aesthetics.
           </div>
         </div>
-        <div class="ifvijbodybg"  ></div>
+        <div class="qv3bfbodybg"  ></div>
       </div>
-      <div style="animation-delay: 0.6s;" class="ifvijbodyitems right" >
-        <div class="ifvijbodyitem rights">
-          <a href="/en/cerrahi-i-slemler/" class="ifvijbodyitemlink">
-            <div class="ifvijbodyitemimg">
+      <div style="animation-delay: 0.6s;" class="qv3bfbodyitems right" >
+        <div class="qv3bfbodyitem rights">
+          <a href="/en/cerrahi-i-slemler/" class="qv3bfbodyitemlink">
+            <div class="qv3bfbodyitemimg">
               <img src="/page/cerrahi-islemler/cs5ce.webp" alt="Surgical Procedures" loading="lazy">
             </div>
 
-            <h2 class="ifvijbodyitemtitle">
+            <h2 class="qv3bfbodyitemtitle">
               Surgical Procedures
             </h2>
           </a>
 
-          <div class="ifvijbodyitechile">
+          <div class="qv3bfbodyitechile">
            Surgical treatment options for reconstructive and functional needs.
           </div>
         </div>
-        <div class="ifvijbodybg"  ></div>
+        <div class="qv3bfbodybg"  ></div>
       </div>
-      <div style="animation-delay: 0.8999999999999999s;" class="ifvijbodyitems left" >
-        <div class="ifvijbodyitem lefts">
-          <a href="/en/dolgu-uygulamalari/" class="ifvijbodyitemlink">
-            <div class="ifvijbodyitemimg">
+      <div style="animation-delay: 0.8999999999999999s;" class="qv3bfbodyitems left" >
+        <div class="qv3bfbodyitem lefts">
+          <a href="/en/dolgu-uygulamalari/" class="qv3bfbodyitemlink">
+            <div class="qv3bfbodyitemimg">
               <img src="/page/dolgu-uygulamalari/dyr95.webp" alt="Filler Applications" loading="lazy">
             </div>
 
-            <h2 class="ifvijbodyitemtitle">
+            <h2 class="qv3bfbodyitemtitle">
               Filler Applications
             </h2>
           </a>
 
-          <div class="ifvijbodyitechile">
+          <div class="qv3bfbodyitechile">
            Applications that regulate volume, contour, and moisture balance with hyaluronic acid fillers.
           </div>
         </div>
-        <div class="ifvijbodybg"  ></div>
+        <div class="qv3bfbodybg"  ></div>
       </div>
-      <div style="animation-delay: 1.2s;" class="ifvijbodyitems right" >
-        <div class="ifvijbodyitem rights">
-          <a href="/en/botoks-uygulamalari/" class="ifvijbodyitemlink">
-            <div class="ifvijbodyitemimg">
+      <div style="animation-delay: 1.2s;" class="qv3bfbodyitems right" >
+        <div class="qv3bfbodyitem rights">
+          <a href="/en/botoks-uygulamalari/" class="qv3bfbodyitemlink">
+            <div class="qv3bfbodyitemimg">
               <img src="/page/botoks-uygulamalari/irn5s.webp" alt="Botox Applications" loading="lazy">
             </div>
 
-            <h2 class="ifvijbodyitemtitle">
+            <h2 class="qv3bfbodyitemtitle">
               Botox Applications
             </h2>
           </a>
 
-          <div class="ifvijbodyitechile">
+          <div class="qv3bfbodyitechile">
            Botox applications that soften expression lines and reduce functional discomfort.
           </div>
         </div>
-        <div class="ifvijbodybg"  ></div>
+        <div class="qv3bfbodybg"  ></div>
       </div>
-      <div style="animation-delay: 1.5s;" class="ifvijbodyitems left" >
-        <div class="ifvijbodyitem lefts">
-          <a href="/en/mezoterapi-ve-genclik-asisi/" class="ifvijbodyitemlink">
-            <div class="ifvijbodyitemimg">
+      <div style="animation-delay: 1.5s;" class="qv3bfbodyitems left" >
+        <div class="qv3bfbodyitem lefts">
+          <a href="/en/mezoterapi-ve-genclik-asisi/" class="qv3bfbodyitemlink">
+            <div class="qv3bfbodyitemimg">
               <img src="/page/mezoterapi-genclik-asisi/avjvq.webp" alt="Mesotherapy and Youth Injectable (Inneov)" loading="lazy">
             </div>
 
-            <h2 class="ifvijbodyitemtitle">
+            <h2 class="qv3bfbodyitemtitle">
               Mesotherapy and Youth Injectable (Inneov)
             </h2>
           </a>
 
-          <div class="ifvijbodyitechile">
+          <div class="qv3bfbodyitechile">
            Mesotherapy protocols providing skin renewal, moisturizing, and collagen stimulation.
           </div>
         </div>
-        <div class="ifvijbodybg"  ></div>
+        <div class="qv3bfbodybg"  ></div>
       </div></div>
 </div>
 
@@ -286,7 +317,7 @@
       }
     );
 
-    var items = Array.from(document.querySelectorAll(".ifvijbodyitems"));
+    var items = Array.from(document.querySelectorAll(".qv3bfbodyitems"));
     items
       .sort(function (a, b) {
         return a.offsetTop - b.offsetTop;
@@ -296,27 +327,27 @@
       });
   }, 100);
 </script>
-<div class="hi67p-out">
-  <div class="hi67p">
-    <div class="hi67p-left">
+<div class="b166m-out">
+  <div class="b166m">
+    <div class="b166m-left">
       <img
-        src="/img/gy96qq/face.jpg?v=a6h45"
-        class="hi67p-left-img"
+        src="/img/gy96qq/face.jpg?v=lnbs3"
+        class="b166m-left-img"
         alt="Tanıtım Modülü"
        loading="lazy"/>
     </div>
-    <div class="hi67p-right">
-      <div class="hi67p-right-body">
-        <div class="hi67p-right-body-name">Meet Op. Dr. Saffet Ulutaş</div>
-        <div class="hi67p-right-body-spot">Op. Dr. Saffet Ulutaş, specialist in Plastic, Aesthetic and Reconstructive Surgery, offers personalized aesthetic solutions in Gaziantep. He aims for a holistic aesthetic experience with natural results and ethical approach.</div>
-        <div class="hi67p-right-body-chile">
-          <div class="hi67p-right-body-chile-row">
-            <div class="hi67p-right-body-chile-row-name">Our Vision</div>
-            <div class="hi67p-right-body-chile-row-spot">To be a trusted reference in aesthetic surgery; providing international standard services to every patient by closely following scientific developments.</div>
+    <div class="b166m-right">
+      <div class="b166m-right-body">
+        <div class="b166m-right-body-name">Meet Op. Dr. Saffet Ulutaş</div>
+        <div class="b166m-right-body-spot">Op. Dr. Saffet Ulutaş, specialist in Plastic, Aesthetic and Reconstructive Surgery, offers personalized aesthetic solutions in Gaziantep. He aims for a holistic aesthetic experience with natural results and ethical approach.</div>
+        <div class="b166m-right-body-chile">
+          <div class="b166m-right-body-chile-row">
+            <div class="b166m-right-body-chile-row-name">Our Vision</div>
+            <div class="b166m-right-body-chile-row-spot">To be a trusted reference in aesthetic surgery; providing international standard services to every patient by closely following scientific developments.</div>
           </div>
-          <div class="hi67p-right-body-chile-row">
-            <div class="hi67p-right-body-chile-row-name">Our Mission</div>
-            <div class="hi67p-right-body-chile-row-spot">To achieve natural and safe aesthetic results with personalized analyses without compromising ethical values; providing full support before and after surgery.</div>
+          <div class="b166m-right-body-chile-row">
+            <div class="b166m-right-body-chile-row-name">Our Mission</div>
+            <div class="b166m-right-body-chile-row-spot">To achieve natural and safe aesthetic results with personalized analyses without compromising ethical values; providing full support before and after surgery.</div>
           </div>
         </div>
       </div>
@@ -324,21 +355,21 @@
   </div>
 </div>
 
-<div class="sliderxyj570body">
-  <div class="sliderxyj570">
-    <div class="sliderxyj570title">Follow Us on Social Media</div>
-    <div class="yj570">
+<div class="sliderxfbytubody">
+  <div class="sliderxfbytu">
+    <div class="sliderxfbytutitle">Follow Us on Social Media</div>
+    <div class="fbytu">
         <a href="https://www.instagram.com/dr_saffetulutas" target="_blank" style="text-decoration: none;" aria-label="Sosyal Medya">
-            <img src="/src/icon/instagram.png" alt="Sosyal Medya" class="yj570-media" loading="lazy" />
+            <img src="/src/icon/instagram.png" alt="Sosyal Medya" class="fbytu-media" loading="lazy" />
         </a>
         <a href="https://www.facebook.com/saffet.ulutas" target="_blank" style="text-decoration: none;" aria-label="Sosyal Medya">
-            <img src="/src/icon/facebook.png" alt="Sosyal Medya" class="yj570-media" loading="lazy" />
+            <img src="/src/icon/facebook.png" alt="Sosyal Medya" class="fbytu-media" loading="lazy" />
         </a>
         <a href="https://www.youtube.com/@saffetulutasclinic" target="_blank" style="text-decoration: none;" aria-label="Sosyal Medya">
-            <img src="/src/icon/youtube.png" alt="Sosyal Medya" class="yj570-media" loading="lazy" />
+            <img src="/src/icon/youtube.png" alt="Sosyal Medya" class="fbytu-media" loading="lazy" />
         </a>
         <a href="https://maps.app.goo.gl/o7Uqw7bZ4owFfC3x5" target="_blank" style="text-decoration: none;" aria-label="Sosyal Medya">
-            <img src="/src/icon/google-maps.png" alt="Sosyal Medya" class="yj570-media" loading="lazy" />
+            <img src="/src/icon/google-maps.png" alt="Sosyal Medya" class="fbytu-media" loading="lazy" />
         </a></div>
   </div>
 </div>
@@ -403,10 +434,10 @@
     <li class="menu__item"><a class="menu__link" href="/en">Home</a></li><li class="menu__item"><a class="menu__link" href="/en/hakkinda">About</a></li><li class="menu__item"><a class="menu__link" href="/en/hizmetlerimiz">Our Services</a></li><li class="menu__item"><a class="menu__link" href="/en/saglik-turizmi">Health Tourism</a></li><li class="menu__item"><a class="menu__link" href="/en/onam-formlari">Consent Forms</a></li><li class="menu__item"><a class="menu__link" href="/en/i-letisim">Contact</a></li>
   </ul>
 
-  <a class="ajanslink" href="https://www.342ajans.com" target="_blank"><img height="20" src="/module/unz8kf/logo.png" alt="342 Ajans"  loading="lazy"/></a>
 
 
-  <p>Opr. Dr. Saffet Ulutaş 2025 cognite. &copy;</p>
+
+  <p>Opr. Dr. Saffet Ulutaş 2025 cognite.   <a class="ajanslink" href="https://www.342ajans.com" target="_blank"><img height="20" src="/module/unz8kf/logo.png" alt="342 Ajans"  loading="lazy"/></a>  &copy;</p>
 </footer>
 
 </div>
@@ -420,8 +451,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=a6h45"></script>
-<script defer src="/src/cookie.js?v=a6h45"></script>
+<script defer type="text/javascript" src="/src/js.js?v=lnbs3"></script>
+<script defer src="/src/cookie.js?v=lnbs3"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
