@@ -1,6 +1,6 @@
 
-  /* Ana Container */
-  .ji03q {
+  
+  .h0000 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,8 +9,8 @@
     padding: 10px 0;
   }
 
-  /* Header - Logo ve Dil Seçici */
-  .ji03qheader {
+  
+  .h0000header {
     display: flex;
     width: var(--max);
     align-items: center;
@@ -19,32 +19,45 @@
     padding: 0 10px;
   }
 
-  .ji03qbody {
+  .h0000body {
     display: flex;
     align-items: center;
   }
 
-  .ji03qbodylogo {
-    height: 100px;
-    max-width: 90vw;
-    object-fit: contain;
+  .h0000body > a {
+    display: inline-flex;
+    align-items: center;
+    max-width: min(90vw, 320px);
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
   }
 
-  /* Sağ Taraf - Dil Seçici ve Hamburger */
-  .ji03qright {
+  .h0000bodylogo {
+    display: block;
+    width: auto;
+    height: 100px;
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  
+  .h0000right {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 15px;
   }
 
-  /* Dil Seçici - Desktop */
-  .ji03qlanguages {
+  
+  .h0000languages {
     display: flex;
     align-items: center;
   }
 
-  .ji03qlanguages ul {
+  .h0000languages ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -52,11 +65,11 @@
     list-style: none;
   }
 
-  .ji03qlanguages li {
+  .h0000languages li {
     list-style: none;
   }
 
-  .ji03qlanguages li a {
+  .h0000languages li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #279c90;
@@ -70,20 +83,20 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .ji03qlanguages li a:hover {
+  .h0000languages li a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     color: #000;
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .ji03qlanguages:empty,
-  .ji03qlanguages ul:empty {
+  .h0000languages:empty,
+  .h0000languages ul:empty {
     display: none;
   }
 
-  /* Hamburger Menü Butonu */
-  .ji03qmenumobil {
+  
+  .h0000menumobil {
     display: none;
     cursor: pointer;
     align-items: center;
@@ -96,17 +109,17 @@
     transition: all 0.3s ease;
   }
 
-  .ji03qmenumobil:hover {
+  .h0000menumobil:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
   }
 
-  .ji03qmenumobil .material-symbols-outlined {
+  .h0000menumobil .material-symbols-outlined {
     font-size: 28px;
   }
 
-  /* Menü Listesi */
-  .ji03qmenulist {
+  
+  .h0000menulist {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +132,7 @@
     overflow: hidden;
   }
 
-  .ji03qmenulist ul {
+  .h0000menulist ul {
     list-style-type: none;
     display: flex;
     gap: 2px;
@@ -129,7 +142,7 @@
     width: 100%;
   }
 
-  .ji03qmenulist ul a {
+  .h0000menulist ul a {
     padding: 12px 24px;
     font-size: 15px;
     font-weight: 500;
@@ -146,7 +159,7 @@
     width: 100%;
   }
 
-  .ji03qmenulist ul a::before {
+  .h0000menulist ul a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -158,33 +171,33 @@
     transition: width 0.3s ease;
   }
 
-  .ji03qmenulist ul a:hover {
+  .h0000menulist ul a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-1px);
   }
 
-  .ji03qmenulist ul a:hover::before {
+  .h0000menulist ul a:hover::before {
     width: calc(100% - 20px);
   }
 
-  .ji03qmenuactive {
+  .h0000menuactive {
     background-color: rgba(255, 255, 255, 0.2) !important;
     font-weight: 600;
   }
 
-  .ji03qmenuactive::before {
+  .h0000menuactive::before {
     width: calc(100% - 20px) !important;
   }
 
-  /* Dil Seçici - Mobil */
-  .ji03qlanguages-mobile {
+  
+  .h0000languages-mobile {
     display: none;
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .ji03qlanguages-mobile ul {
+  .h0000languages-mobile ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -196,12 +209,12 @@
     align-items: center;
   }
 
-  .ji03qlanguages-mobile li {
+  .h0000languages-mobile li {
     list-style: none;
     display: flex;
   }
 
-  .ji03qlanguages-mobile li a {
+  .h0000languages-mobile li a {
     padding: 8px 12px;
     font-size: 14px;
     color: #fff;
@@ -215,53 +228,53 @@
     white-space: nowrap;
   }
 
-  .ji03qlanguages-mobile li a:hover {
+  .h0000languages-mobile li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-1px);
   }
 
-  .ji03qlanguages-mobile:empty,
-  .ji03qlanguages-mobile ul:empty {
+  .h0000languages-mobile:empty,
+  .h0000languages-mobile ul:empty {
     display: none !important;
   }
 
-  /* Desktop Görünüm */
+  
   @media screen and (min-width: 1025px) {
-    .ji03qmenumobil {
+    .h0000menumobil {
       display: none !important;
     }
 
-    .ji03qmenulist {
+    .h0000menulist {
       display: flex !important;
       margin-top: 20px;
     }
 
-    .ji03qmenulist ul {
+    .h0000menulist ul {
       justify-content: center;
       gap: 4px;
     }
 
-    .ji03qmenulist ul a {
+    .h0000menulist ul a {
       padding: 14px 28px;
       font-size: 16px;
     }
   }
 
-  /* Tablet ve Mobil */
+  
   @media screen and (max-width: 1024px) {
-    .ji03qheader {
+    .h0000header {
       width: calc(100% - 20px);
     }
 
-    .ji03qmenumobil {
+    .h0000menumobil {
       display: flex;
     }
 
-    .ji03qlanguages {
+    .h0000languages {
       display: none;
     }
 
-    .ji03qmenulist {
+    .h0000menulist {
       width: calc(100% - 20px);
       margin: 15px auto 0;
       padding: 0;
@@ -271,18 +284,18 @@
       display: none;
     }
 
-    .ji03qmenulist:not(.is-collapsed) {
+    .h0000menulist:not(.is-collapsed) {
       display: flex;
     }
 
-    .ji03qmenulist ul {
+    .h0000menulist ul {
       flex-direction: column;
       gap: 0;
       width: 100%;
       padding: 12px 0;
     }
 
-    .ji03qmenulist ul a {
+    .h0000menulist ul a {
       width: 100%;
       padding: 14px 20px;
       border-radius: 0;
@@ -290,55 +303,87 @@
       justify-content: flex-start;
     }
 
-    .ji03qmenulist ul a:hover {
+    .h0000menulist ul a:hover {
       background-color: rgba(255, 255, 255, 0.1);
       transform: none;
     }
 
-    .ji03qmenulist:not(.is-collapsed) .ji03qlanguages-mobile {
+    .h0000menulist:not(.is-collapsed) .h0000languages-mobile {
       display: flex;
       flex-direction: column;
       padding: 0 20px 15px;
     }
 
-    .ji03qmenulist:not(.is-collapsed) .ji03qlanguages-mobile ul {
+    .h0000menulist:not(.is-collapsed) .h0000languages-mobile ul {
       display: flex !important;
       flex-direction: row !important;
       flex-wrap: wrap;
       justify-content: center;
     }
+
+    .h0000body > a {
+      max-width: min(50vw, 220px);
+    }
+
+    .h0000bodylogo {
+      height: 80px;
+      max-height: 80px;
+    }
   }
 
-  /* Küçük Mobil */
+  
   @media screen and (max-width: 768px) {
-    .ji03q {
+    .h0000 {
       padding: 8px 0;
     }
 
-    .ji03qheader {
+    .h0000header {
       padding: 0 15px;
     }
 
-    .ji03qbodylogo {
-      max-width: 60vw;
+    .h0000body > a {
+      max-width: min(40vw, 180px);
     }
 
-    .ji03qmenulist ul a {
+    .h0000bodylogo {
+      max-width: min(40vw, 180px);
+      height: 70px;
+      max-height: 70px;
+    }
+
+    .h0000menulist ul a {
       font-size: 14px;
       padding: 12px 20px;
     }
 
-    .ji03qmenumobil {
+    .h0000menumobil {
       padding: 6px 10px;
     }
 
-    .ji03qmenumobil .material-symbols-outlined {
+    .h0000menumobil .material-symbols-outlined {
       font-size: 24px;
     }
   }
 
+  
+  @media (max-width: 768px) {
+    [class*="h0000"] {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  }
 
-  .c4jak {
+  
+  @media (prefers-reduced-motion: reduce) {
+    [class*="h0000"],
+    [class*="h0000"] * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+
+  .b0000 {
     width: var(--max);
     margin: --margin--;
     display: flex;
@@ -346,7 +391,7 @@
     gap: 50px;
   }
 
-  /* Banka Hesap Bilgileri Tablosu */
+  
   .bank-accounts-table {
     width: 100%;
     margin-bottom: 20px;
@@ -523,7 +568,7 @@
     content: 'check';
   }
 
-  /* Yorum Formu */
+  
   .comment-form-section {
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     padding: 40px;
@@ -737,9 +782,9 @@
     font-size: 1.2em;
   }
 
-  /* Responsive */
+  
   @media screen and (max-width: 1024px) {
-    .c4jak {
+    .b0000 {
       gap: 40px;
     }
 
@@ -792,7 +837,7 @@
   }
 
   @media screen and (max-width: 480px) {
-    .c4jak {
+    .b0000 {
       gap: 30px;
     }
 

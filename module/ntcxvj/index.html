@@ -1,5 +1,5 @@
 <div class="modulex">
-  <!-- Banka Hesap Bilgileri Tablosu -->
+  
   <div class="bank-accounts-table">
     <div class="table-wrapper">
       <table>
@@ -77,7 +77,7 @@
     </div>
   </div>
 
-  <!-- Yorum Formu -->
+  
   <div class="comment-form-section">
     <div class="form-header">
       <h3 class="comment-form-title">
@@ -148,7 +148,7 @@
     gap: 50px;
   }
 
-  /* Banka Hesap Bilgileri Tablosu */
+  
   .bank-accounts-table {
     width: 100%;
     margin-bottom: 20px;
@@ -325,7 +325,7 @@
     content: 'check';
   }
 
-  /* Yorum Formu */
+  
   .comment-form-section {
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     padding: 40px;
@@ -539,7 +539,7 @@
     font-size: 1.2em;
   }
 
-  /* Responsive */
+  
   @media screen and (max-width: 1024px) {
     .modulex {
       gap: 40px;
@@ -615,7 +615,6 @@
 </style>
 
 <script>
-  // IBAN Kopyalama Fonksiyonu
   function copyToClipboard(elementId, button) {
     var ibanElement = document.getElementById(elementId);
     var text = ibanElement ? ibanElement.textContent.trim() : button.getAttribute('data-copy');
@@ -671,11 +670,8 @@
       }
     }, 2000);
   }
-
-  // Form İşlemleri
   if (typeof document !== 'undefined') {
     setTimeout(function() {
-      // Karakter Sayacı
       var commentTextarea = document.getElementById('comment');
       var commentCount = document.getElementById('commentCount');
       
@@ -688,8 +684,6 @@
             this.value = this.value.substring(0, 1000);
             commentCount.textContent = 1000;
           }
-          
-          // Renk değişimi
           var charCountElement = commentCount.parentElement;
           if (length > 900) {
             charCountElement.style.color = '#f44336';
@@ -700,14 +694,10 @@
           }
         });
       }
-
-      // Form Gönderimi
       var form = document.getElementById('commentForm');
       if (form) {
         form.addEventListener('submit', function(e) {
           e.preventDefault();
-          
-          // Validasyon
           var name = document.getElementById('name').value.trim();
           var email = document.getElementById('email').value.trim();
           var comment = document.getElementById('comment').value.trim();
@@ -716,15 +706,11 @@
             alert('Lütfen tüm zorunlu alanları doldurun.');
             return;
           }
-          
-          // Email validasyonu
           var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           if (!emailRegex.test(email)) {
             alert('Lütfen geçerli bir e-posta adresi girin.');
             return;
           }
-          
-          // Form verilerini hazırla
           var formData = {
             name: name,
             email: email,
@@ -733,18 +719,12 @@
             saveInfo: document.getElementById('saveInfo').checked,
             timestamp: new Date().toISOString()
           };
-          
-          // Burada API'ye gönderilebilir
           console.log('Form verileri:', formData);
-          
-          // Başarı mesajı
           var submitButton = form.querySelector('.submit-button');
           var originalText = submitButton.innerHTML;
           submitButton.innerHTML = '<span class="material-symbols-outlined">check</span><span>Gönderildi!</span>';
           submitButton.style.background = '#4caf50';
           submitButton.disabled = true;
-          
-          // Formu temizle
           setTimeout(function() {
             form.reset();
             if (commentCount) commentCount.textContent = '0';
@@ -754,8 +734,6 @@
           }, 3000);
         });
       }
-
-      // Input focus animasyonları
       var inputs = document.querySelectorAll('.form-group input, .form-group textarea');
       inputs.forEach(function(input) {
         input.addEventListener('focus', function() {
