@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <title>Migraine Botox</title>
   <meta name="description" content="Botox treatment aimed at reducing the frequency and severity of migraine attacks." />
-  <meta name="keywords" content="migraine botox, migraine treatment, botulinum toxin" />
+  <meta name="keywords" content="" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://drsaffetulutas.com/en/migren-botoksu/" />
 
@@ -28,18 +28,15 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=g4bq0" />
-  <link rel="stylesheet" href="/src/mx-ui.css?v=g4bq0" />
-  <link rel="preload" href="/src/cookie.css?v=g4bq0" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/material-symbols-outlined.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="/src/cookie.css?v=g4bq0" />
-    <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/src/material-symbols-outlined.css" />
-  </noscript>
-  <link rel="shortcut icon" href="/img/icon.png?v=g4bq0" type="image/png" />
+  <link rel="stylesheet" href="/src/rubik.css?v=yvr8n" />
+  <link rel="stylesheet" href="/src/css.css?v=yvr8n" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=yvr8n" />
+  <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=yvr8n" />
+  
+  <link rel="stylesheet" href="/src/cookie.css?v=yvr8n" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=yvr8n" />
+  <link rel="shortcut icon" href="/img/icon.png?v=yvr8n" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -64,15 +61,32 @@
   
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#2196f3">
-<link rel="stylesheet" href="style.css?v=g4bq0">
+<link rel="stylesheet" href="style.css?v=yvr8n">
 </head>
 
 <body>
+  <script>
+    (function () {
+      window.user = window.user || { id: null, email: null, name: null, isLoggedIn: false, loginMethod: null };
+      var emptySnapshot = { empty: true, forEach: function () {} };
+      var emptyDoc = { exists: false, data: function () { return null; } };
+      if (typeof window.dataAddWeb !== "function") window.dataAddWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataDeleteWeb !== "function") window.dataDeleteWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataUpdateWeb !== "function") window.dataUpdateWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataGetWeb !== "function") window.dataGetWeb = function () { return Promise.resolve(emptyDoc); };
+      if (typeof window.dataListWeb !== "function") window.dataListWeb = function () { return Promise.resolve(emptySnapshot); };
+      if (typeof window.authStateListenerWeb !== "function") {
+        window.authStateListenerWeb = function (cb) {
+          if (typeof cb === "function") setTimeout(function () { cb(null); }, 0);
+        };
+      }
+    })();
+  </script>
   <div id="header"><div class="h0000">
   <div class="h0000header">
     <div class="h0000body">
       <a href="/en/">
-        <img src="/img/logo.png?v=ou36z" class="h0000bodylogo" alt="Opr. Dr. Saffet Ulutaş Logo" loading="lazy" />
+        <img src="/img/logo.png?v=ed6te" class="h0000bodylogo" alt="Opr. Dr. Saffet Ulutaş Logo" loading="lazy" />
       </a>
     </div>
     <div class="h0000right">
@@ -146,7 +160,7 @@
   <div class="b0000-main">
     
     
-    <div class="b0000-body"><h2>Migraine Botox</h2><p>Migraine botox is an effective treatment in reducing the frequency and severity of chronic migraine attacks with FDA-approved protocols. Op. Dr. Saffet Ulutaş determines the patient's migraine trigger points by working in cooperation with a neurology specialist. A total of 31-39 injection points are used in the head, neck, and shoulder area.</p><p>Botox prevents the occurrence of migraine pain by blocking the release of chemicals that cause pain from nerve endings. Pain severity decreases in the first two weeks, and a significant drop in the number of attacks is seen in the third month. Regular sessions are planned every three months so that the treatment can be permanent.</p><p>Op. Dr. Saffet Ulutaş chooses safe injection points by knowing the muscle anatomy well in migraine botox applications. The process takes a short time and does not require anesthesia; only a light stinging sensation is experienced. Afterward, patients can return to daily activities but it is recommended to avoid heavy exercise for the first 24 hours.</p><p>Migraine botox provides great relief for patients whose attacks cannot be controlled despite classical drug treatments. Sleep pattern, work life, and social life are positively affected. Dr. Ulutaş measures treatment success by encouraging his patients to keep a migraine diary.</p><p>For those who want to have migraine botox in Gaziantep, our clinic offers a safe option with its multidisciplinary approach and experienced team. You can contact us to manage your chronic migraine pains and take a step toward a more comfortable life.</p></div>
+    <div class="b0000-body"></div>
     
   </div>
 </div>
@@ -278,56 +292,14 @@
   }, 100);
 </script>
 </div>
-  <div id="footer"><footer class="footer">
-  <div class="waves">
-    <div class="wave" id="wave1"></div>
-    <div class="wave" id="wave2"></div>
-    <div class="wave" id="wave3"></div>
-    <div class="wave" id="wave4"></div>
-  </div>
-  <ul class="social-icon">
-
-    
-    
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-x"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-    </li>
-  </ul>
-  <ul class="menu">
-    <li class="menu__item"><a class="menu__link" href="/en">Home</a></li><li class="menu__item"><a class="menu__link" href="/en/hakkinda">About</a></li><li class="menu__item"><a class="menu__link" href="/en/hizmetlerimiz">Our Services</a></li><li class="menu__item"><a class="menu__link" href="/en/saglik-turizmi">Health Tourism</a></li><li class="menu__item"><a class="menu__link" href="/en/onam-formlari">Consent Forms</a></li><li class="menu__item"><a class="menu__link" href="/en/i-letisim">Contact</a></li>
-  </ul>
-
-
-  <a class="ajanslink" href="https://www.342ajans.com" target="_blank"><img height="20" src="/module/unz8kf/logo.png" alt="342 Ajans"  loading="lazy"/></a>
-
-  <p style="margin-top: 20px;">Opr. Dr. Saffet Ulutaş 2025 cognite.    &copy;</p>
-</footer>
-
-</div>
+  <div id="footer">code</div>
 
   
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=g4bq0"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=g4bq0"></script>
-  <script defer src="/src/cookie.js?v=g4bq0"></script>
+  <script defer src="/src/mx-ui.js?v=yvr8n"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=yvr8n"></script>
+  <script defer src="/src/cookie.js?v=yvr8n"></script>
 
   <script>
     setTimeout(function() {

@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <title>Kişisel Veriler</title>
   <meta name="description" content="KVKK kapsamında hasta verilerinin nasıl işlendiği ve korunduğu." />
-  <meta name="keywords" content="kvkk estetik klinik, kişisel veri koruma" />
+  <meta name="keywords" content="" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://drsaffetulutas.com/tr/kisisel-veriler/" />
 
@@ -28,18 +28,15 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=hcjxe" />
-  <link rel="stylesheet" href="/src/mx-ui.css?v=hcjxe" />
-  <link rel="preload" href="/src/cookie.css?v=hcjxe" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/material-symbols-outlined.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="/src/cookie.css?v=hcjxe" />
-    <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/src/material-symbols-outlined.css" />
-  </noscript>
-  <link rel="shortcut icon" href="/img/icon.png?v=hcjxe" type="image/png" />
+  <link rel="stylesheet" href="/src/rubik.css?v=vpyg5" />
+  <link rel="stylesheet" href="/src/css.css?v=vpyg5" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=vpyg5" />
+  <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=vpyg5" />
+  
+  <link rel="stylesheet" href="/src/cookie.css?v=vpyg5" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=vpyg5" />
+  <link rel="shortcut icon" href="/img/icon.png?v=vpyg5" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -64,15 +61,32 @@
   
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#2196f3">
-<link rel="stylesheet" href="style.css?v=hcjxe">
+<link rel="stylesheet" href="style.css?v=vpyg5">
 </head>
 
 <body>
+  <script>
+    (function () {
+      window.user = window.user || { id: null, email: null, name: null, isLoggedIn: false, loginMethod: null };
+      var emptySnapshot = { empty: true, forEach: function () {} };
+      var emptyDoc = { exists: false, data: function () { return null; } };
+      if (typeof window.dataAddWeb !== "function") window.dataAddWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataDeleteWeb !== "function") window.dataDeleteWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataUpdateWeb !== "function") window.dataUpdateWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataGetWeb !== "function") window.dataGetWeb = function () { return Promise.resolve(emptyDoc); };
+      if (typeof window.dataListWeb !== "function") window.dataListWeb = function () { return Promise.resolve(emptySnapshot); };
+      if (typeof window.authStateListenerWeb !== "function") {
+        window.authStateListenerWeb = function (cb) {
+          if (typeof cb === "function") setTimeout(function () { cb(null); }, 0);
+        };
+      }
+    })();
+  </script>
   <div id="header"><div class="h0000">
   <div class="h0000header">
     <div class="h0000body">
       <a href="/tr/">
-        <img src="/img/logo.png?v=i6eqq" class="h0000bodylogo" alt="Opr. Dr. Saffet Ulutaş Logo" loading="lazy" />
+        <img src="/img/logo.png?v=zqstl" class="h0000bodylogo" alt="Opr. Dr. Saffet Ulutaş Logo" loading="lazy" />
       </a>
     </div>
     <div class="h0000right">
@@ -146,7 +160,7 @@
   <div class="b0000-main">
     
     
-    <div class="b0000-body"><h2>Kişisel Verilerin Korunması</h2><p>Kliniğimizde işlenen kişisel veriler iki ana kategoride değerlendirilir: tanımlayıcı veriler (ad, soyad, iletişim bilgisi) ve özel nitelikli sağlık verileri (laboratuvar sonuçları, görüntüleme raporları, tedavi planları). Bu veriler, yalnızca tedavi ve bakım hizmeti sunmak amacıyla toplanır. Op. Dr. Saffet Ulutaş, veri güvenliğini sağlamak için GDPR ve KVKK standartlarına uyumlu bir yönetim sistemi kurmuştur.</p><p>Veri işleme süreçleri şeffaf şekilde yürütülür. Hastalara, verilerinin hangi amaçlarla işlendiği ve ne kadar süre saklanacağı yazılı olarak bildirilir. Dijital kayıtlar şifreli veri tabanlarında tutulur, fiziksel belgeler ise yetkilendirilmiş personelin erişebileceği kilitli arşivlerde saklanır. Gerektiğinde veriler anonimleştirilerek eğitim ve istatistiksel analizlerde kullanılır.</p><p>Hastalarımız, dilediklerinde verilerine erişme, düzeltilmesini talep etme veya tamamen silinmesini isteme hakkına sahiptir. Bu talepler, kimlik doğrulama sonrası kısa sürede sonuçlandırılır. Verilerin üçüncü kişilere veya sigorta şirketlerine aktarılması gerektiğinde, önceden aydınlatma metni paylaşılır ve açık rıza alınır.</p><p>Kliniğimizde veri güvenliği ihlallerinin önüne geçmek için sızma testleri, yedekleme sistemleri ve çok faktörlü kimlik doğrulama yöntemleri kullanılır. Personelimiz düzenli aralıklarla KVKK eğitimlerine katılır, gizlilik sözleşmeleri imzalar. Bu titiz yaklaşım sayesinde hastalarımız, kendilerini emanet ettikleri bilgilerin güvende olduğundan emin olur.</p><p>Op. Dr. Saffet Ulutaş kliniği, kişisel veri koruma kültürünü sürekli geliştirmeyi hedefler. Dijitalleşen sağlık hizmetleri dünyasında mahremiyetin korunması, algı değil zorunluluktur; biz de bu sorumluluğu en üst düzeyde üstleniyoruz.</p></div>
+    <div class="b0000-body"></div>
     
   </div>
 </div>
@@ -278,56 +292,14 @@
   }, 100);
 </script>
 </div>
-  <div id="footer"><footer class="footer">
-  <div class="waves">
-    <div class="wave" id="wave1"></div>
-    <div class="wave" id="wave2"></div>
-    <div class="wave" id="wave3"></div>
-    <div class="wave" id="wave4"></div>
-  </div>
-  <ul class="social-icon">
-
-    
-    
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-x"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-    </li>
-  </ul>
-  <ul class="menu">
-    <li class="menu__item"><a class="menu__link" href="/tr">Anasayfa</a></li><li class="menu__item"><a class="menu__link" href="/tr/hakkinda">Hakkında</a></li><li class="menu__item"><a class="menu__link" href="/tr/hizmetlerimiz">Hizmetlerimiz</a></li><li class="menu__item"><a class="menu__link" href="/tr/saglik-turizmi">Sağlık Turizmi</a></li><li class="menu__item"><a class="menu__link" href="/tr/onam-formlari">Onam Formları</a></li><li class="menu__item"><a class="menu__link" href="/tr/i-letisim">İletişim</a></li>
-  </ul>
-
-
-  <a class="ajanslink" href="https://www.342ajans.com" target="_blank"><img height="20" src="/module/unz8kf/logo.png" alt="342 Ajans"  loading="lazy"/></a>
-
-  <p style="margin-top: 20px;">Opr. Dr. Saffet Ulutaş 2025 cognite.    &copy;</p>
-</footer>
-
-</div>
+  <div id="footer">code</div>
 
   
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=hcjxe"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=hcjxe"></script>
-  <script defer src="/src/cookie.js?v=hcjxe"></script>
+  <script defer src="/src/mx-ui.js?v=vpyg5"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=vpyg5"></script>
+  <script defer src="/src/cookie.js?v=vpyg5"></script>
 
   <script>
     setTimeout(function() {

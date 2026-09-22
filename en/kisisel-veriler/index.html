@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <title>Personal Data</title>
   <meta name="description" content="How patient data is processed and protected under KVKK." />
-  <meta name="keywords" content="kvkk aesthetic clinic, personal data protection" />
+  <meta name="keywords" content="" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://drsaffetulutas.com/en/kisisel-veriler/" />
 
@@ -28,18 +28,15 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=c53la" />
-  <link rel="stylesheet" href="/src/mx-ui.css?v=c53la" />
-  <link rel="preload" href="/src/cookie.css?v=c53la" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/material-symbols-outlined.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="/src/cookie.css?v=c53la" />
-    <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/src/material-symbols-outlined.css" />
-  </noscript>
-  <link rel="shortcut icon" href="/img/icon.png?v=c53la" type="image/png" />
+  <link rel="stylesheet" href="/src/rubik.css?v=ynt3k" />
+  <link rel="stylesheet" href="/src/css.css?v=ynt3k" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=ynt3k" />
+  <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=ynt3k" />
+  
+  <link rel="stylesheet" href="/src/cookie.css?v=ynt3k" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=ynt3k" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ynt3k" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -64,15 +61,32 @@
   
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#2196f3">
-<link rel="stylesheet" href="style.css?v=c53la">
+<link rel="stylesheet" href="style.css?v=ynt3k">
 </head>
 
 <body>
+  <script>
+    (function () {
+      window.user = window.user || { id: null, email: null, name: null, isLoggedIn: false, loginMethod: null };
+      var emptySnapshot = { empty: true, forEach: function () {} };
+      var emptyDoc = { exists: false, data: function () { return null; } };
+      if (typeof window.dataAddWeb !== "function") window.dataAddWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataDeleteWeb !== "function") window.dataDeleteWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataUpdateWeb !== "function") window.dataUpdateWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataGetWeb !== "function") window.dataGetWeb = function () { return Promise.resolve(emptyDoc); };
+      if (typeof window.dataListWeb !== "function") window.dataListWeb = function () { return Promise.resolve(emptySnapshot); };
+      if (typeof window.authStateListenerWeb !== "function") {
+        window.authStateListenerWeb = function (cb) {
+          if (typeof cb === "function") setTimeout(function () { cb(null); }, 0);
+        };
+      }
+    })();
+  </script>
   <div id="header"><div class="h0000">
   <div class="h0000header">
     <div class="h0000body">
       <a href="/en/">
-        <img src="/img/logo.png?v=zkrzz" class="h0000bodylogo" alt="Opr. Dr. Saffet Ulutaş Logo" loading="lazy" />
+        <img src="/img/logo.png?v=fc1mk" class="h0000bodylogo" alt="Opr. Dr. Saffet Ulutaş Logo" loading="lazy" />
       </a>
     </div>
     <div class="h0000right">
@@ -146,7 +160,7 @@
   <div class="b0000-main">
     
     
-    <div class="b0000-body"><h2>Protection of Personal Data</h2><p>Personal data processed in our clinic are evaluated in two main categories: descriptive data (name, surname, contact information) and specially qualified health data (laboratory results, imaging reports, treatment plans). This data is collected solely for the purpose of providing treatment and care services. Op. Dr. Saffet Ulutaş has established a management system compliant with GDPR and KVKK standards to ensure data security.</p><p>Data processing processes are conducted transparently. Patients are notified in writing for what purposes their data is processed and how long it will be stored. Digital records are kept in encrypted databases, while physical documents are kept in locked archives accessible by authorized personnel. When necessary, data is used in education and statistical analysis by being anonymized.</p><p>Our patients have the right to access their data, request it to be corrected, or ask for it to be completely deleted whenever they wish. These requests are finalized in a short time after identity authentication. When data needs to be transferred to third parties or insurance companies, a clarification text is shared beforehand and explicit consent is obtained.</p></div>
+    <div class="b0000-body"></div>
     
   </div>
 </div>
@@ -278,56 +292,14 @@
   }, 100);
 </script>
 </div>
-  <div id="footer"><footer class="footer">
-  <div class="waves">
-    <div class="wave" id="wave1"></div>
-    <div class="wave" id="wave2"></div>
-    <div class="wave" id="wave3"></div>
-    <div class="wave" id="wave4"></div>
-  </div>
-  <ul class="social-icon">
-
-    
-    
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-x"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-    </li>
-  </ul>
-  <ul class="menu">
-    <li class="menu__item"><a class="menu__link" href="/en">Home</a></li><li class="menu__item"><a class="menu__link" href="/en/hakkinda">About</a></li><li class="menu__item"><a class="menu__link" href="/en/hizmetlerimiz">Our Services</a></li><li class="menu__item"><a class="menu__link" href="/en/saglik-turizmi">Health Tourism</a></li><li class="menu__item"><a class="menu__link" href="/en/onam-formlari">Consent Forms</a></li><li class="menu__item"><a class="menu__link" href="/en/i-letisim">Contact</a></li>
-  </ul>
-
-
-  <a class="ajanslink" href="https://www.342ajans.com" target="_blank"><img height="20" src="/module/unz8kf/logo.png" alt="342 Ajans"  loading="lazy"/></a>
-
-  <p style="margin-top: 20px;">Opr. Dr. Saffet Ulutaş 2025 cognite.    &copy;</p>
-</footer>
-
-</div>
+  <div id="footer">code</div>
 
   
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=c53la"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=c53la"></script>
-  <script defer src="/src/cookie.js?v=c53la"></script>
+  <script defer src="/src/mx-ui.js?v=ynt3k"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=ynt3k"></script>
+  <script defer src="/src/cookie.js?v=ynt3k"></script>
 
   <script>
     setTimeout(function() {

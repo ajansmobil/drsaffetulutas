@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <title>حقوق المستخدم</title>
   <meta name="description" content="دليل يشرح حقوقك في الموافقة المستنيرة والوصول إلى البيانات والملاحظات." />
-  <meta name="keywords" content="حقوق المرضى عيادة تجميلية، الموافقة المستنيرة" />
+  <meta name="keywords" content="" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://drsaffetulutas.com/ar/kullanici-haklari/" />
 
@@ -28,18 +28,15 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=fn0r4" />
-  <link rel="stylesheet" href="/src/mx-ui.css?v=fn0r4" />
-  <link rel="preload" href="/src/cookie.css?v=fn0r4" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/material-symbols-outlined.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="/src/cookie.css?v=fn0r4" />
-    <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/src/material-symbols-outlined.css" />
-  </noscript>
-  <link rel="shortcut icon" href="/img/icon.png?v=fn0r4" type="image/png" />
+  <link rel="stylesheet" href="/src/rubik.css?v=x51qc" />
+  <link rel="stylesheet" href="/src/css.css?v=x51qc" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=x51qc" />
+  <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=x51qc" />
+  
+  <link rel="stylesheet" href="/src/cookie.css?v=x51qc" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=x51qc" />
+  <link rel="shortcut icon" href="/img/icon.png?v=x51qc" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -64,15 +61,32 @@
   
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#2196f3">
-<link rel="stylesheet" href="style.css?v=fn0r4">
+<link rel="stylesheet" href="style.css?v=x51qc">
 </head>
 
 <body>
+  <script>
+    (function () {
+      window.user = window.user || { id: null, email: null, name: null, isLoggedIn: false, loginMethod: null };
+      var emptySnapshot = { empty: true, forEach: function () {} };
+      var emptyDoc = { exists: false, data: function () { return null; } };
+      if (typeof window.dataAddWeb !== "function") window.dataAddWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataDeleteWeb !== "function") window.dataDeleteWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataUpdateWeb !== "function") window.dataUpdateWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataGetWeb !== "function") window.dataGetWeb = function () { return Promise.resolve(emptyDoc); };
+      if (typeof window.dataListWeb !== "function") window.dataListWeb = function () { return Promise.resolve(emptySnapshot); };
+      if (typeof window.authStateListenerWeb !== "function") {
+        window.authStateListenerWeb = function (cb) {
+          if (typeof cb === "function") setTimeout(function () { cb(null); }, 0);
+        };
+      }
+    })();
+  </script>
   <div id="header"><div class="h0000">
   <div class="h0000header">
     <div class="h0000body">
       <a href="/ar/">
-        <img src="/img/logo.png?v=r4y3g" class="h0000bodylogo" alt="Opr. Dr. Saffet Ulutaş Logo" loading="lazy" />
+        <img src="/img/logo.png?v=o8auz" class="h0000bodylogo" alt="Opr. Dr. Saffet Ulutaş Logo" loading="lazy" />
       </a>
     </div>
     <div class="h0000right">
@@ -146,7 +160,7 @@
   <div class="b0000-main">
     
     
-    <div class="b0000-body"><h2>حقوق المرضى والمستخدمين</h2><p>يعد احترام جميع حقوق مرضانا حجر الزاوية في الخدمات الصحية التي نقدمها. في عيادة الدكتور صافيت أولوتاش، يمكن للجميع ممارسة حقوقهم في المعلومات والموافقة والخصوصية والاعتراض بحرية. يتم شرح جميع عمليات ما قبل العلاج بلغة مفهومة، وتوضيح الخيارات البديلة والمخاطر المحتملة. يمكن لمرضانا طرح أسئلتهم دون تردد واتخاذ قراراتهم بمحض إرادتهم.</p><p>يتم الحصول على الموافقة المستنيرة كتابياً قبل كل عملية جراحية أو إجراء طبي. يتم إعداد نموذج الموافقة ليشمل الغرض من الإجراء ومدته ومخاطره وفوائده المتوقعة. يمكن لمرضانا ممارسة حقهم في التراجع عن الإجراء أو تأجيله إذا رغبوا في ذلك. تتم حماية حقوق القصر أو الأفراد الذين لا يستطيعون التعبير عن أنفسهم من خلال ممثليهم القانونيين.</p></div>
+    <div class="b0000-body"></div>
     
   </div>
 </div>
@@ -278,56 +292,14 @@
   }, 100);
 </script>
 </div>
-  <div id="footer"><footer class="footer">
-  <div class="waves">
-    <div class="wave" id="wave1"></div>
-    <div class="wave" id="wave2"></div>
-    <div class="wave" id="wave3"></div>
-    <div class="wave" id="wave4"></div>
-  </div>
-  <ul class="social-icon">
-
-    
-    
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-x"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-    </li>
-  </ul>
-  <ul class="menu">
-    <li class="menu__item"><a class="menu__link" href="/ar">الصفحة الرئيسية</a></li><li class="menu__item"><a class="menu__link" href="/ar/hakkinda">حول</a></li><li class="menu__item"><a class="menu__link" href="/ar/hizmetlerimiz">خدماتنا</a></li><li class="menu__item"><a class="menu__link" href="/ar/saglik-turizmi">السياحة العلاجية</a></li><li class="menu__item"><a class="menu__link" href="/ar/onam-formlari">نماذج الموافقة</a></li><li class="menu__item"><a class="menu__link" href="/ar/i-letisim">اتصل بنا</a></li>
-  </ul>
-
-
-  <a class="ajanslink" href="https://www.342ajans.com" target="_blank"><img height="20" src="/module/unz8kf/logo.png" alt="342 Ajans"  loading="lazy"/></a>
-
-  <p style="margin-top: 20px;">Opr. Dr. Saffet Ulutaş 2025 cognite.    &copy;</p>
-</footer>
-
-</div>
+  <div id="footer">code</div>
 
   
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=fn0r4"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=fn0r4"></script>
-  <script defer src="/src/cookie.js?v=fn0r4"></script>
+  <script defer src="/src/mx-ui.js?v=x51qc"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=x51qc"></script>
+  <script defer src="/src/cookie.js?v=x51qc"></script>
 
   <script>
     setTimeout(function() {

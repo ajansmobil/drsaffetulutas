@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <title>Mesotherapy and Youth Injectable (Inneov)</title>
   <meta name="description" content="Mesotherapy protocols providing skin renewal, moisturizing, and collagen stimulation." />
-  <meta name="keywords" content="mesotherapy, youth shot, skin rejuvenation" />
+  <meta name="keywords" content="" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://drsaffetulutas.com/en/mezoterapi-ve-genclik-asisi/" />
 
@@ -28,18 +28,15 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=jmw46" />
-  <link rel="stylesheet" href="/src/mx-ui.css?v=jmw46" />
-  <link rel="preload" href="/src/cookie.css?v=jmw46" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/material-symbols-outlined.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="/src/cookie.css?v=jmw46" />
-    <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/src/material-symbols-outlined.css" />
-  </noscript>
-  <link rel="shortcut icon" href="/img/icon.png?v=jmw46" type="image/png" />
+  <link rel="stylesheet" href="/src/rubik.css?v=mgzqh" />
+  <link rel="stylesheet" href="/src/css.css?v=mgzqh" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=mgzqh" />
+  <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=mgzqh" />
+  
+  <link rel="stylesheet" href="/src/cookie.css?v=mgzqh" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=mgzqh" />
+  <link rel="shortcut icon" href="/img/icon.png?v=mgzqh" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -64,15 +61,32 @@
   
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#2196f3">
-<link rel="stylesheet" href="style.css?v=jmw46">
+<link rel="stylesheet" href="style.css?v=mgzqh">
 </head>
 
 <body>
+  <script>
+    (function () {
+      window.user = window.user || { id: null, email: null, name: null, isLoggedIn: false, loginMethod: null };
+      var emptySnapshot = { empty: true, forEach: function () {} };
+      var emptyDoc = { exists: false, data: function () { return null; } };
+      if (typeof window.dataAddWeb !== "function") window.dataAddWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataDeleteWeb !== "function") window.dataDeleteWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataUpdateWeb !== "function") window.dataUpdateWeb = function () { return Promise.resolve(); };
+      if (typeof window.dataGetWeb !== "function") window.dataGetWeb = function () { return Promise.resolve(emptyDoc); };
+      if (typeof window.dataListWeb !== "function") window.dataListWeb = function () { return Promise.resolve(emptySnapshot); };
+      if (typeof window.authStateListenerWeb !== "function") {
+        window.authStateListenerWeb = function (cb) {
+          if (typeof cb === "function") setTimeout(function () { cb(null); }, 0);
+        };
+      }
+    })();
+  </script>
   <div id="header"><div class="h0000">
   <div class="h0000header">
     <div class="h0000body">
       <a href="/en/">
-        <img src="/img/logo.png?v=il7sd" class="h0000bodylogo" alt="Opr. Dr. Saffet Ulutaş Logo" loading="lazy" />
+        <img src="/img/logo.png?v=yszw9" class="h0000bodylogo" alt="Opr. Dr. Saffet Ulutaş Logo" loading="lazy" />
       </a>
     </div>
     <div class="h0000right">
@@ -145,8 +159,8 @@
   </nav>
   <div class="b0000-main">
     
-    <div class="b0000-desc-body"><img src="/page/mezoterapi-genclik-asisi/avjvq.webp?v=o9y54" width="100%" alt="Mesotherapy and Youth Injectable (Inneov)" loading="lazy" /></div>
-    <div class="b0000-body"><h2>Mesotherapy and Youth Injectable</h2><p>Mesotherapy and youth shot applications are non-surgical treatment methods that deliver vitamins, minerals, amino acids, and hyaluronic acid needed by the skin directly to the middle skin layer. Op. Dr. Saffet Ulutaş prepares special cocktails according to the patient's skin type and needs. These protocols regain the moisture and elasticity lost by the skin by providing renewal at the cellular level.</p><p>Within the scope of the application, fine wrinkles on the skin are lightened, the appearance of spots is reduced, and pores are tightened. Pure hyaluronic acid injections, also known as youth shots, create a long-lasting shine and fullness by triggering collagen production. Dr. Ulutaş regularly recommends these treatments during seasonal transitions in order to strengthen the defense mechanism of the skin.</p><p>The procedure takes a short time and daily life can be returned immediately afterward. From the first session, a healthier and more vivid appearance is noticed on the skin. Op. Dr. Saffet Ulutaş clinic offers expert solutions for those who want to protect skin quality and delay aging signs in Gaziantep.</p></div>
+    <div class="b0000-desc-body"><img src="/page/mezoterapi-genclik-asisi/avjvq.webp?v=idu0j" width="100%" alt="Mesotherapy and Youth Injectable (Inneov)" loading="lazy" /></div>
+    <div class="b0000-body"></div>
     
   </div>
 </div>
@@ -278,56 +292,14 @@
   }, 100);
 </script>
 </div>
-  <div id="footer"><footer class="footer">
-  <div class="waves">
-    <div class="wave" id="wave1"></div>
-    <div class="wave" id="wave2"></div>
-    <div class="wave" id="wave3"></div>
-    <div class="wave" id="wave4"></div>
-  </div>
-  <ul class="social-icon">
-
-    
-    
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-x"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-    </li>
-    <li class="social-icon__item">
-      <a class="social-icon__link" href="#">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-    </li>
-  </ul>
-  <ul class="menu">
-    <li class="menu__item"><a class="menu__link" href="/en">Home</a></li><li class="menu__item"><a class="menu__link" href="/en/hakkinda">About</a></li><li class="menu__item"><a class="menu__link" href="/en/hizmetlerimiz">Our Services</a></li><li class="menu__item"><a class="menu__link" href="/en/saglik-turizmi">Health Tourism</a></li><li class="menu__item"><a class="menu__link" href="/en/onam-formlari">Consent Forms</a></li><li class="menu__item"><a class="menu__link" href="/en/i-letisim">Contact</a></li>
-  </ul>
-
-
-  <a class="ajanslink" href="https://www.342ajans.com" target="_blank"><img height="20" src="/module/unz8kf/logo.png" alt="342 Ajans"  loading="lazy"/></a>
-
-  <p style="margin-top: 20px;">Opr. Dr. Saffet Ulutaş 2025 cognite.    &copy;</p>
-</footer>
-
-</div>
+  <div id="footer">code</div>
 
   
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=jmw46"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=jmw46"></script>
-  <script defer src="/src/cookie.js?v=jmw46"></script>
+  <script defer src="/src/mx-ui.js?v=mgzqh"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=mgzqh"></script>
+  <script defer src="/src/cookie.js?v=mgzqh"></script>
 
   <script>
     setTimeout(function() {
