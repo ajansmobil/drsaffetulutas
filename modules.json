@@ -47,7 +47,15 @@
         "color": "#fff",
         "bgcolor": "#116f65",
         "img": "",
-        "imgwidth": "250px"
+        "imgwidth": "250px",
+        "aria_nav": {
+          "tr": "Alt menü",
+          "en": "Footer menu"
+        },
+        "aria_social": {
+          "tr": "Sosyal medya",
+          "en": "Social media"
+        }
       },
       "data": [],
       "version": "1.0.0",
@@ -63,10 +71,29 @@
       "desing": {
         "height": "200",
         "opacity": "0.5",
-        "backgroundcolor": "#fff",
+        "backgroundcolor": "#ffffff",
         "color": "#1e3046",
         "img": "map.jpg",
-        "externalUrl": ""
+        "externalUrl": "",
+        "stil": "",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "badgeText": {
+          "tr": "Konumumuz",
+          "en": "Our Location",
+          "ar": "موقعنا"
+        },
+        "infoTitle": {
+          "tr": "Bize Ulaşın",
+          "en": "Contact Us",
+          "ar": "اتصل بنا"
+        },
+        "directions": {
+          "tr": "Yol tarifi al",
+          "en": "Get directions",
+          "ar": "احصل على الاتجاهات"
+        }
       },
       "version": "1.0.0",
       "icon": "map"
@@ -87,7 +114,9 @@
           "ru": "Свяжитесь с нами",
           "de": "Kontaktieren Sie uns"
         },
-        "margin": "30px 0px 30px 0px"
+        "margin": "30px 0px 30px 0px",
+        "stil": "",
+        "linkcolor": "#1B3A6B"
       },
       "data": [
         {
@@ -122,7 +151,57 @@
         "font-size": "32",
         "backgroundcolor": "#009a96",
         "menu-active": "#116f65",
-        "textcolor": "#fff"
+        "textcolor": "#fff",
+        "stil": "",
+        "activetext": "#fff",
+        "bgcolor": "#ffffff",
+        "border_radius": "8px",
+        "card_shadow": "0 10px 28px rgba(0, 0, 0, 0.08)",
+        "color": "#111111",
+        "colortitle": "#111111",
+        "coloractive": "#000000",
+        "ui": {
+          "tr": {
+            "home": "Anasayfa",
+            "products": "Ürünler",
+            "dimensions": "Ölçüler",
+            "dimNote": "Standart üretim referansıdır; proje bazında özelleştirilebilir.",
+            "quote": "Teklif Al",
+            "whatsapp": "WhatsApp",
+            "prev": "Önceki",
+            "next": "Sonraki"
+          },
+          "en": {
+            "home": "Home",
+            "products": "Products",
+            "dimensions": "Dimensions",
+            "dimNote": "Standard production reference; customizable per project.",
+            "quote": "Get Quote",
+            "whatsapp": "WhatsApp",
+            "prev": "Previous",
+            "next": "Next"
+          },
+          "ar": {
+            "home": "الرئيسية",
+            "products": "المنتجات",
+            "dimensions": "الأبعاد",
+            "dimNote": "مرجع إنتاج قياسي؛ قابل للتخصيص حسب المشروع.",
+            "quote": "عرض سعر",
+            "whatsapp": "واتساب",
+            "prev": "السابق",
+            "next": "التالي"
+          }
+        },
+        "noTitle": {
+          "tr": "Başlık Yok",
+          "en": "No title",
+          "ar": "بدون عنوان"
+        },
+        "productNavAria": {
+          "tr": "Ürün navigasyonu",
+          "en": "Product navigation",
+          "ar": "تنقل المنتج"
+        }
       },
       "version": "1.0.0",
       "icon": "web"
@@ -183,7 +262,11 @@
         "bgcolor": "#116f65",
         "fontcolor": "#fff",
         "margintop": "20",
-        "marginbotton": "20"
+        "marginbotton": "20",
+        "title": {
+          "tr": "",
+          "en": ""
+        }
       },
       "version": "1.0.0",
       "icon": "business"
@@ -460,7 +543,12 @@
       "desing": {
         "color": "#279c90",
         "height": "100px",
-        "background-color": "#116f65"
+        "background-color": "#116f65",
+        "ariaToggle": {
+          "tr": "Menüyü aç",
+          "en": "Open menu",
+          "ar": "فتح القائمة"
+        }
       },
       "version": "1.0.0",
       "icon": "menu"
@@ -487,7 +575,15 @@
         "bgcolor": "#1e3046",
         "color": "#fff",
         "img": "",
-        "imgwidth": "250px"
+        "imgwidth": "250px",
+        "aria_nav": {
+          "tr": "Alt menü",
+          "en": "Footer menu"
+        },
+        "aria_social": {
+          "tr": "Sosyal medya",
+          "en": "Social media"
+        }
       },
       "data": [],
       "version": "1.0.0",
@@ -503,12 +599,95 @@
         "bgcolor": "#1e3046",
         "color": "#fff",
         "img": "",
-        "imgwidth": "250px"
+        "imgwidth": "250px",
+        "aria_nav": {
+          "tr": "Alt menü",
+          "en": "Footer menu"
+        },
+        "aria_social": {
+          "tr": "Sosyal medya",
+          "en": "Social media"
+        }
       },
       "data": [],
       "index": 12,
       "version": "1.0.0",
       "icon": "web_asset"
+    },
+    {
+      "name": "Page Desing 2",
+      "desing": {
+        "height": "100",
+        "opacity": "0.5",
+        "font-size": "50",
+        "backgroundcolor": "#000",
+        "textcolor": "#fff",
+        "category": "page"
+      },
+      "category": "page",
+      "description": "Page Desing 2 modülü. 2 farklı web projesinde kullanılmaktadır. İçerik sunumu ve görsel düzenleme için tasarlanmıştır.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "ix90tk",
+      "path": "page-text",
+      "local": "body",
+      "data": [],
+      "index": 13
+    },
+    {
+      "name": "Sayfa Listesi Kare",
+      "desing": {
+        "eyebrow": {
+          "tr": "Kurumsal",
+          "en": "Corporate",
+          "ar": "الشركة"
+        },
+        "sectionTitle": {
+          "tr": "Kurumsal",
+          "en": "Corporate",
+          "ar": "الشركة"
+        },
+        "sectionSubtitle": {
+          "tr": "Firmamız ve yasal bilgilendirme sayfaları",
+          "en": "Our company and legal information pages",
+          "ar": "شركتنا وصفحات المعلومات القانونية"
+        },
+        "ctaLabel": {
+          "tr": "İncele",
+          "en": "View",
+          "ar": "عرض"
+        },
+        "page": "kurumsal",
+        "size": 12,
+        "category": "",
+        "aspect-ratio": "1 / 1",
+        "showAllProducts": false,
+        "margin": "20px 0px 20px 0px",
+        "bgcolor": "transparent",
+        "cardbg": "#ffffff",
+        "titlecolor": "#111827",
+        "textcolor": "#4b5563",
+        "bordercolor": "rgba(17, 24, 39, 0.1)",
+        "radius": "14px",
+        "accent": "#1e3a5f"
+      },
+      "category": "page-list",
+      "description": "Modern katalog grid liste modülü. Görsel üstte, altında başlık; soft border + hover lift + görsel zoom, opsiyonel eyebrow/başlık/alt başlık ve CTA satırı. Sayfa içeriklerini responsive grid düzeninde (masaüstü desing.size, ≤1024 3, ≤768 2 kolon) gösterir. 8 farklı projede kullanılır: üretim, lojistik, kurumsal, ambalaj, profesyonel hizmet ve inşaat sektörlerinde.",
+      "version": "1.2.0",
+      "icon": "grid_view",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "fmi60e",
+      "path": "page-list",
+      "local": "body",
+      "data": [],
+      "index": 14
     }
   ]
 }

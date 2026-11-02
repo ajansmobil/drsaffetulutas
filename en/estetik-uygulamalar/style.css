@@ -1,3 +1,4 @@
+:root{--mx-site-primary:#2563EB;--mx-site-primary-contrast:#FFFFFF;--mx-site-bg:#FFFFFF;--mx-site-text:#0B1120;--mx-site-surface:#FFFFFF;--mx-site-surface-2:#F2F4F7}
 
   
   .h0000 {
@@ -85,7 +86,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -112,7 +113,7 @@
     border-radius: 6px;
     padding: 8px 12px;
     color: #fff;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
   .h0000menumobil:hover {
@@ -160,7 +161,7 @@
     justify-content: center;
     white-space: nowrap;
     border-radius: 6px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     position: relative;
     width: 100%;
   }
@@ -170,11 +171,11 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
-    width: 0;
+    transform: translateX(-50%) scaleX(0);
+    width: calc(100% - 20px);
     height: 2px;
     background-color: rgba(255, 255, 255, 0.9);
-    transition: width 0.3s ease;
+    transition: transform 0.3s ease;
   }
 
   .h0000menulist ul a:hover {
@@ -183,7 +184,7 @@
   }
 
   .h0000menulist ul a:hover::before {
-    width: calc(100% - 20px);
+    transform: translateX(-50%) scaleX(1);
   }
 
   .h0000menuactive {
@@ -192,7 +193,7 @@
   }
 
   .h0000menuactive::before {
-    width: calc(100% - 20px) !important;
+    transform: translateX(-50%) scaleX(1) !important;
   }
 
   
@@ -230,7 +231,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     white-space: nowrap;
   }
 
@@ -463,10 +464,11 @@
 
   .b0000-menu-link,
   .b0000-top {
-    background-color: #fff;
+    
+    background-color: #ffffff;
     padding: 10px 12px;
     border-radius: 8px;
-    border: 1px solid rgba(30, 48, 70, 0.08);
+    border: 1px solid color-mix(in srgb, #111111 12%, transparent);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -522,11 +524,11 @@
   }
 
   .b0000-sub-link {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 8px 10px;
     border-radius: 8px;
     font-size: 14px;
-    border: 1px solid rgba(30, 48, 70, 0.06);
+    border: 1px solid color-mix(in srgb, #111111 10%, transparent);
     transition: background-color 0.22s ease, color 0.22s ease;
     text-align: left;
     text-decoration: none;
@@ -623,9 +625,9 @@
     gap: 28px;
     width: 100%;
     padding: 20px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 8px;
-    border: 1px solid rgba(30, 48, 70, 0.08);
+    border: 1px solid color-mix(in srgb, #111111 12%, transparent);
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
     animation: b0000Pd5FadeUp 0.5s ease 0.08s both;
   }
@@ -1135,18 +1137,19 @@
     .b0000-menu {
       position: fixed;
       top: 0;
-      left: -100%;
+      left: 0;
+      transform: translateX(-100%);
       width: 82%;
       max-width: 320px;
       height: 100%;
       z-index: 9999;
-      transition: left 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+      transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
       visibility: hidden;
       border-radius: 0;
     }
 
     .b0000-menu.active {
-      left: 0;
+      transform: translateX(0);
       visibility: visible;
     }
 
@@ -1209,6 +1212,300 @@
     .b0000-body,
     .b0000-pd5-nav {
       animation: none !important;
+    }
+
+    
+    [class*="b0000"],
+    [class*="b0000"] * {
+      transition: none !important;
+    }
+  }
+
+  
+
+  
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-menu {
+    gap: 12px;
+  }
+
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-menu-link,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-top,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-sub-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 18px 12px;
+    position: relative;
+    border-radius: var(--mx-radius-lg, 16px);
+    
+    color: #111111;
+    border: 1px solid color-mix(in srgb, #111111 10%, transparent);
+  }
+
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-menu-link.active,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-top.active,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-sub-link.active,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-menu-link:hover,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-top:hover {
+    background-color: #116f65;
+    color: #fff;
+  }
+
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-menu-link::before,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-top::before,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-sub-link::before {
+    content: "article";
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 14%, transparent);
+    color: var(--mx-site-primary, #2563eb);
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+  }
+
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-top::before {
+    content: "folder_open";
+  }
+
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-top .b0000-icon {
+    position: absolute;
+    top: 10px;
+    inset-inline-end: 10px;
+  }
+
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-menu-link.active::before,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-menu-link:hover::before,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-top.active::before,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-top:hover::before,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-sub-link.active::before,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-sub-link:hover::before {
+    background-color: color-mix(in srgb, currentColor 18%, transparent);
+    color: inherit;
+    transform: scale(1.06);
+  }
+
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-menu-link:hover,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-top:hover {
+    transform: translateY(-2px);
+  }
+
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-menu-link-text,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-menu-parent-label {
+    text-align: center;
+  }
+
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-sub {
+    padding-left: 0;
+    gap: 8px;
+  }
+
+  
+  [data-stil="yatay-kart"] .b0000-menu {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    gap: 10px;
+  }
+
+  [data-stil="yatay-kart"] .b0000-menu-link,
+  [data-stil="yatay-kart"] .b0000-top,
+  [data-stil="yatay-kart"] .b0000-sub-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: var(--mx-radius-md, 12px);
+    background-color: #ffffff;
+    color: #111111;
+    border: 1px solid color-mix(in srgb, #111111 10%, transparent);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  
+  [data-stil="yatay-kart"] .b0000-menu-link.active,
+  [data-stil="yatay-kart"] .b0000-top.active,
+  [data-stil="yatay-kart"] .b0000-menu-link:hover,
+  [data-stil="yatay-kart"] .b0000-top:hover {
+    background-color: #116f65;
+    color: #fff;
+  }
+
+  [data-stil="yatay-kart"] .b0000-sub-link.active,
+  [data-stil="yatay-kart"] .b0000-sub-link:hover {
+    background-color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 12%, transparent);
+    color: #111111;
+  }
+
+  [data-stil="yatay-kart"] .b0000-menu-link::before,
+  [data-stil="yatay-kart"] .b0000-top::before,
+  [data-stil="yatay-kart"] .b0000-sub-link::before {
+    content: "chevron_right";
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--mx-radius-sm, 10px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 12%, transparent);
+    color: var(--mx-site-primary, #2563eb);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  [data-stil="yatay-kart"] .b0000-top::before {
+    content: "folder_open";
+  }
+
+  [data-stil="yatay-kart"] .b0000-sub-link::before {
+    content: "subdirectory_arrow_right";
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  [dir="rtl"] [data-stil="yatay-kart"] .b0000-menu-link::before,
+  [dir="rtl"] [data-stil="yatay-kart"] .b0000-sub-link::before {
+    transform: scaleX(-1);
+  }
+
+  [data-stil="yatay-kart"] .b0000-top .b0000-icon {
+    margin-inline-start: auto;
+  }
+
+  [data-stil="yatay-kart"] .b0000-menu-link.active::before,
+  [data-stil="yatay-kart"] .b0000-menu-link:hover::before,
+  [data-stil="yatay-kart"] .b0000-top.active::before,
+  [data-stil="yatay-kart"] .b0000-top:hover::before,
+  [data-stil="yatay-kart"] .b0000-sub-link.active::before,
+  [data-stil="yatay-kart"] .b0000-sub-link:hover::before {
+    background-color: color-mix(in srgb, currentColor 18%, transparent);
+    color: inherit;
+  }
+
+  [data-stil="yatay-kart"] .b0000-menu-link:hover,
+  [data-stil="yatay-kart"] .b0000-top:hover,
+  [data-stil="yatay-kart"] .b0000-sub-link:hover {
+    transform: translateX(4px);
+  }
+
+  [dir="rtl"] [data-stil="yatay-kart"] .b0000-menu-link:hover,
+  [dir="rtl"] [data-stil="yatay-kart"] .b0000-top:hover,
+  [dir="rtl"] [data-stil="yatay-kart"] .b0000-sub-link:hover {
+    transform: translateX(-4px);
+  }
+
+  [data-stil="yatay-kart"] .b0000-sub {
+    padding-left: 0;
+    padding-inline-start: 12px;
+  }
+
+  
+  [data-stil="kenar-cizgili"] .b0000-menu {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    gap: 2px;
+    border-radius: 0;
+  }
+
+  [data-stil="kenar-cizgili"] .b0000-menu-link,
+  [data-stil="kenar-cizgili"] .b0000-top,
+  [data-stil="kenar-cizgili"] .b0000-sub-link {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: inherit;
+    border: 0;
+    border-radius: 0;
+    border-inline-start: 3px solid color-mix(in srgb, currentColor 16%, transparent);
+    padding: 12px 14px;
+    padding-inline-start: 16px;
+    box-shadow: none;
+    transition: border-color 0.25s ease, padding 0.25s ease, background-color 0.25s ease;
+  }
+
+  [data-stil="kenar-cizgili"] .b0000-sub-link {
+    padding-inline-start: 28px;
+  }
+
+  [data-stil="kenar-cizgili"] .b0000-menu-link.active,
+  [data-stil="kenar-cizgili"] .b0000-menu-link:hover,
+  [data-stil="kenar-cizgili"] .b0000-top.active,
+  [data-stil="kenar-cizgili"] .b0000-top:hover,
+  [data-stil="kenar-cizgili"] .b0000-sub-link.active,
+  [data-stil="kenar-cizgili"] .b0000-sub-link:hover {
+    background-color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 9%, transparent);
+    border-inline-start-color: var(--mx-site-primary, #2563eb);
+    color: inherit;
+    font-weight: 700;
+    padding-inline-start: 24px;
+    transform: none;
+    box-shadow: none;
+  }
+
+  [data-stil="kenar-cizgili"] .b0000-sub-link.active,
+  [data-stil="kenar-cizgili"] .b0000-sub-link:hover {
+    padding-inline-start: 36px;
+  }
+
+  [data-stil="kenar-cizgili"] .b0000-menu-parent {
+    background-color: transparent !important;
+    border-color: color-mix(in srgb, currentColor 16%, transparent) !important;
+  }
+
+  [data-stil="kenar-cizgili"] .b0000-sub {
+    padding-left: 0;
+  }
+
+  
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-body,
+  [data-stil="yatay-kart"] .b0000-body,
+  [data-stil="kenar-cizgili"] .b0000-body,
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-body > article p,
+  [data-stil="yatay-kart"] .b0000-body > article p,
+  [data-stil="kenar-cizgili"] .b0000-body > article p {
+    color: inherit;
+  }
+
+  
+  [data-stil="ikon-ustte-yuvarlak"] .b0000-top,
+  [data-stil="yatay-kart"] .b0000-top {
+    border: 1px solid color-mix(in srgb, #111111 55%, transparent);
+  }
+
+  
+  @media screen and (max-width: 1024px) {
+    [data-stil="yatay-kart"] .b0000-menu,
+    [data-stil="kenar-cizgili"] .b0000-menu {
+      background-color: #ffffff;
+      color: #111111;
+      padding: 12px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-stil="ikon-ustte-yuvarlak"] .b0000-menu-link:hover,
+    [data-stil="ikon-ustte-yuvarlak"] .b0000-top:hover,
+    [data-stil="yatay-kart"] .b0000-menu-link:hover,
+    [data-stil="yatay-kart"] .b0000-top:hover,
+    [data-stil="yatay-kart"] .b0000-sub-link:hover {
+      transform: none !important;
     }
   }
 
