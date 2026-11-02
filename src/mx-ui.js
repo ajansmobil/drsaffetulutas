@@ -10,10 +10,7 @@
     sweetalert2: { js: "/src/vendor/sweetalert2.all.min.js", globalName: "Swal" },
     dayjs: { js: "/src/vendor/dayjs.min.js", globalName: "dayjs" },
     justvalidate: { js: "/src/vendor/just-validate.min.js", globalName: "JustValidate" },
-    embla: { js: "/src/vendor/embla-carousel.min.js", globalName: "EmblaCarousel" },
-    
-    mxfiltre: { js: "/src/mx-filtre.js", globalName: "MxFiltre" },
-    mxlightbox: { js: "/src/mx-lightbox.js", globalName: "MxLightbox" }
+    embla: { js: "/src/vendor/embla-carousel.min.js", globalName: "EmblaCarousel" }
   };
 
   var mxLoadPromises = {};

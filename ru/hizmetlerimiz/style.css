@@ -1,4 +1,3 @@
-:root{--mx-site-primary:#2563EB;--mx-site-primary-contrast:#FFFFFF;--mx-site-bg:#FFFFFF;--mx-site-text:#0B1120;--mx-site-surface:#FFFFFF;--mx-site-surface-2:#F2F4F7}
 
   
   .h0000 {
@@ -86,7 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -113,7 +112,7 @@
     border-radius: 6px;
     padding: 8px 12px;
     color: #fff;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .h0000menumobil:hover {
@@ -161,7 +160,7 @@
     justify-content: center;
     white-space: nowrap;
     border-radius: 6px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
     width: 100%;
   }
@@ -171,11 +170,11 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%) scaleX(0);
-    width: calc(100% - 20px);
+    transform: translateX(-50%);
+    width: 0;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.9);
-    transition: transform 0.3s ease;
+    transition: width 0.3s ease;
   }
 
   .h0000menulist ul a:hover {
@@ -184,7 +183,7 @@
   }
 
   .h0000menulist ul a:hover::before {
-    transform: translateX(-50%) scaleX(1);
+    width: calc(100% - 20px);
   }
 
   .h0000menuactive {
@@ -193,7 +192,7 @@
   }
 
   .h0000menuactive::before {
-    transform: translateX(-50%) scaleX(1) !important;
+    width: calc(100% - 20px) !important;
   }
 
   
@@ -231,7 +230,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
     white-space: nowrap;
   }
 
@@ -392,8 +391,6 @@
 
   
   .b0000 {
-    overflow-x: hidden;
-    overflow-x: clip;
     width: 100%;
     margin: 15px 0;
   }
@@ -436,7 +433,7 @@
     width: calc(200px * 2);
     margin-top: -100px;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .b0000bodyitemimg:hover {
@@ -462,7 +459,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     letter-spacing: 0.5px;
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .b0000bodyitemtitle:hover {
@@ -537,16 +534,16 @@
   }
 
   .b0000bodyitechilesubpage {
-    font-size: 16px;
-    color: #fff !important;
+    font-size: --chilesize--;
+    color: --chilecolor-- !important;
     padding: 10px;
     border-radius: 5px;
-    background-color: #000;
+    background-color: --chilebgcolor--;
     white-space: nowrap;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
     z-index: 3;
   }

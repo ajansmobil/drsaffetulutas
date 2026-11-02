@@ -1,4 +1,3 @@
-:root{--mx-site-primary:#2563EB;--mx-site-primary-contrast:#FFFFFF;--mx-site-bg:#FFFFFF;--mx-site-text:#0B1120;--mx-site-surface:#FFFFFF;--mx-site-surface-2:#F2F4F7}
 
   .h0000 {
     width: 100%;
@@ -233,7 +232,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.05);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,8 +383,7 @@
     .h0000menulistbody {
       position: fixed;
       top: 0;
-      right: 0;
-      transform: translateX(calc(100% + 16px));
+      right: -100%;
       width: 85%;
       max-width: 320px;
       height: 100%;
@@ -393,14 +391,14 @@
       box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
       z-index: 9999;
       overflow-y: auto;
-      transition: transform 0.3s ease;
+      transition: right 0.3s ease;
       display: flex;
       flex-direction: column;
       padding: 0;
     }
 
     .h0000menu.h0000menu-open .h0000menulistbody {
-      transform: none;
+      right: 0;
     }
 
     
@@ -491,8 +489,6 @@
 
   
   .b0000 {
-    overflow-x: hidden;
-    overflow-x: clip;
     width: 100%;
     margin: 15px 0;
   }
@@ -535,7 +531,7 @@
     width: calc(200px * 2);
     margin-top: -100px;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .b0000bodyitemimg:hover {
@@ -561,7 +557,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     letter-spacing: 0.5px;
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .b0000bodyitemtitle:hover {
@@ -636,16 +632,16 @@
   }
 
   .b0000bodyitechilesubpage {
-    font-size: 16px;
-    color: #fff !important;
+    font-size: --chilesize--;
+    color: --chilecolor-- !important;
     padding: 10px;
     border-radius: 5px;
-    background-color: #000;
+    background-color: --chilebgcolor--;
     white-space: nowrap;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
     z-index: 3;
   }
@@ -705,7 +701,6 @@
     color: #fff;
     margin: 20px 0px 20px 0px;
     float: left;
-    overflow-x: clip;
   }
 
   .b0001-right-body-chile {
@@ -789,12 +784,8 @@
     border: solid 15px #fff;
     position: relative;
     z-index: 2;
-    animation: fadeInScale 0.5s ease-out;
-    
-    box-shadow: 0 4px 40px rgba(29, 27, 76, 0.32),
-                0 0 30px #fff,
-                0 0 60px #fff,
-                0 0 90px #fff;
+    animation: fadeInScale 1s ease-out, rotatingGlow 4s linear infinite;
+    box-shadow: 0 4px 40px rgba(29, 27, 76, 0.32);
   }
 
   
@@ -821,6 +812,7 @@
     );
     opacity: 0.6;
     z-index: -1;
+    animation: rotateGlow 3s linear infinite;
     filter: blur(20px);
   }
 
@@ -847,10 +839,52 @@
     );
     opacity: 0.4;
     z-index: -2;
+    animation: rotateGlow 5s linear infinite reverse;
     filter: blur(30px);
   }
 
   
+  @keyframes rotateGlow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotatingGlow {
+    0%, 100% {
+      box-shadow: 0 4px 40px rgba(29, 27, 76, 0.32),
+                  0 0 30px #fff,
+                  0 0 60px #fff,
+                  0 0 90px #fff;
+    }
+    25% {
+      box-shadow: 0 4px 40px rgba(29, 27, 76, 0.32),
+                  0 0 50px #fff,
+                  0 0 80px #fff,
+                  0 0 110px #fff,
+                  -20px 0 40px #fff,
+                  20px 0 40px #fff;
+    }
+    50% {
+      box-shadow: 0 4px 40px rgba(29, 27, 76, 0.32),
+                  0 0 40px #fff,
+                  0 0 70px #fff,
+                  0 0 100px #fff,
+                  0 -20px 40px #fff,
+                  0 20px 40px #fff;
+    }
+    75% {
+      box-shadow: 0 4px 40px rgba(29, 27, 76, 0.32),
+                  0 0 50px #fff,
+                  0 0 80px #fff,
+                  0 0 110px #fff,
+                  20px 0 40px #fff,
+                  -20px 0 40px #fff;
+    }
+  }
 
   
   @keyframes fadeInScale {
@@ -866,7 +900,7 @@
 
   
   .b0001-right-body {
-    animation: slideInRightBounce 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s both;
+    animation: slideInRightBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s both;
   }
 
   @keyframes slideInRightBounce {
@@ -887,7 +921,7 @@
   }
 
   .b0001-right-body-name {
-    animation: slideInLeftBounce 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s both;
+    animation: slideInLeftBounce 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s both;
   }
 
   @keyframes slideInLeftBounce {
@@ -908,7 +942,7 @@
   }
 
   .b0001-right-body-spot {
-    animation: slideInRightBounceText 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s both;
+    animation: slideInRightBounceText 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.8s both;
   }
 
   @keyframes slideInRightBounceText {
@@ -929,11 +963,11 @@
   }
 
   .b0001-right-body-chile-row:first-child {
-    animation: slideInUpBounce 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s both;
+    animation: slideInUpBounce 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s both;
   }
 
   .b0001-right-body-chile-row:last-child {
-    animation: slideInUpBounce 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s both;
+    animation: slideInUpBounce 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.2s both;
   }
 
   @keyframes slideInUpBounce {
@@ -968,6 +1002,7 @@
       max-width: 200px;
       margin-right: 0px;
       float: left;
+      box-shadow: 0 4px 40px rgba(29, 27, 76, 0.32);
     }
 
     .b0001-left-img::before,
@@ -1011,28 +1046,6 @@
   }
 
   
-  @media screen and (min-width: 1025px) {
-    [dir="rtl"] .b0001-left {
-      justify-content: left;
-    }
-
-    [dir="rtl"] .b0001-left-img {
-      margin-right: 0;
-      margin-left: -150px;
-    }
-
-    [dir="rtl"] .b0001-right-body {
-      margin-left: 0;
-      margin-right: 200px;
-    }
-  }
-
-  
-  .b0001-halesiz .b0001-left-img {
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.14);
-  }
-
-  
   @media (max-width: 768px) {
     [class*="b0001"] {
       max-width: 100%;
@@ -1046,11 +1059,6 @@
     [class*="b0001"] * {
       animation: none !important;
       transition: none !important;
-    }
-
-    
-    .b0001 {
-      opacity: 1;
     }
   }
 
@@ -1085,7 +1093,7 @@
     padding: 5px;
     gap: 5px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     position: relative;
     overflow: hidden;
   }
@@ -1094,16 +1102,15 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    transform: translateX(-100%);
-    transition: transform 0.5s ease;
+    transition: left 0.6s ease;
   }
 
   .sliderxb0002:hover::before {
-    transform: translateX(100%);
+    left: 100%;
   }
 
   .sliderxb0002:hover {
@@ -1162,7 +1169,7 @@
     height: 40px;
     border-radius: 11px;
     object-fit: contain;
-    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
     background: rgba(255, 255, 255, 0.08);
     padding: 9px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
@@ -1223,18 +1230,18 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80px;
-    height: 80px;
+    width: 0;
+    height: 0;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
-    
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.4s ease;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
     pointer-events: none;
   }
 
   .b0002 a:hover::after {
-    transform: translate(-50%, -50%) scale(1);
+    width: 80px;
+    height: 80px;
   }
 
   @keyframes pulse {
@@ -1307,18 +1314,9 @@
   
   @media (prefers-reduced-motion: reduce) {
     [class*="b0002"],
-    [class*="b0002"] *,
-    [class*="b0002"]::before,
-    [class*="b0002"] *::after {
+    [class*="b0002"] * {
       animation: none !important;
       transition: none !important;
-    }
-    
-    .sliderxb0002body,
-    .sliderxb0002title,
-    .b0002-media {
-      opacity: 1;
-      transform: none;
     }
   }
 

@@ -1,17 +1,7 @@
-<!doctype html>
-<html lang="de" dir="ltr">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="noindex, nofollow" />
-<title>404 — Opr. Dr. Saffet Ulutaş</title>
-</head>
-<body>
-<link rel="stylesheet" href="/src/rubik.css?v=s3n7o" />
 <nav>
   <div href="/" class="menu">
     <a href="/" class="website_name"
-      ><img src="/img/logo.png?v=s3n7o" width="300" alt="Opr. Dr. Saffet Ulutaş Logo"
+      ><img src="/img/logo.png?v=yjxgf" width="300" alt="Opr. Dr. Saffet Ulutaş Logo"
     /></a>
   </div>
 </nav>
@@ -46,15 +36,15 @@
     <div class="text">
       <article>
         <p>
-          Sorry! The page you are looking for could not be found. <br />Click to return to the home page.
+          Üzgünüz! Aradığınız sayfa bulunamadı. <br />Ana sayfaya dönmek için tıklayın.
         </p>
-        <a href="/de/">Home</a>
+        <a href="/de/">Ana Sayfa</a>
       </article>
     </div>
   </div>
 </section>
 <style>
-  
+  @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap");
 
   .about {
     position: fixed;
@@ -244,7 +234,7 @@
     margin: 0;
     padding: 0;
     height: auto;
-    font-family: var(--mx-font-sans, Rubik, system-ui, sans-serif);
+    font-family: "Barlow", sans-serif;
     background: #695681;
   }
 
@@ -829,10 +819,8 @@
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {
@@ -845,5 +833,3 @@
     window.location.href = "/";
   }, 5000);
 </script>
-</body>
-</html>
