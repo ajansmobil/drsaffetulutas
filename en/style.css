@@ -636,11 +636,11 @@
   }
 
   .b0000bodyitechilesubpage {
-    font-size: --chilesize--;
-    color: --chilecolor-- !important;
+    font-size: 16px;
+    color: #fff !important;
     padding: 10px;
     border-radius: 5px;
-    background-color: --chilebgcolor--;
+    background-color: #000;
     white-space: nowrap;
     text-decoration: none;
     display: inline-block;
@@ -705,6 +705,7 @@
     color: #fff;
     margin: 20px 0px 20px 0px;
     float: left;
+    overflow-x: clip;
   }
 
   .b0001-right-body-chile {
@@ -1007,6 +1008,28 @@
     .b0001-left {
       flex: 1;
     }
+  }
+
+  
+  @media screen and (min-width: 1025px) {
+    [dir="rtl"] .b0001-left {
+      justify-content: left;
+    }
+
+    [dir="rtl"] .b0001-left-img {
+      margin-right: 0;
+      margin-left: -150px;
+    }
+
+    [dir="rtl"] .b0001-right-body {
+      margin-left: 0;
+      margin-right: 200px;
+    }
+  }
+
+  
+  .b0001-halesiz .b0001-left-img {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.14);
   }
 
   
